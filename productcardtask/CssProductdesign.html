@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card Project</title>
+
+
+    <style>
+nav {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a, .login {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* Smooth rounded corners */
+}
+
+nav a:hover, .login:hover {
+    background: linear-gradient(to right, orange, red);
+}
+
+.login{
+    color: black;
+}
+
+.search {
+    margin-left: auto; 
+    padding: 5px;
+}
+
+.image{
+    background-image: url(./assets/Images/textured-super-light-green-abstract-cxz2h9nb5v65it15.jpg);
+    height: 85vh;
+}
+
+.shopify-image{
+    height: 500px;
+    position: relative;
+    left: 700px;
+}
+
+img{
+    height: 222px;
+    border-radius: 10px;
+}
+
+.myntra{
+    height: 70px;
+}
+
+.product-image{
+    padding: 20px;
+}
+
+.product-name{
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+.product-description{
+    text-align: center;
+}
+
+.product-price{
+    text-align: center;
+}
+
+b{
+    padding: 1px;
+}
+
+del{
+    padding: 2px;
+    color: grey;
+}
+
+span{
+    padding: 4px;
+    color: green;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div><img src="./assets/Images/logo-myntra-41464.png" class="myntra"></div>
+        <nav>
+            <a href="#home" class="home">Home</a>
+            <a href="#women" class="women">Women</a>
+            <a href="#men" class="men">Men</a>
+            <a href="#electronics" class="electronics">Electronics</a>
+            <a href="#furniture" class="furniture">Furniture</a>
+            <a href="#kids" class="kids">Kids</a>
+            <input type="search" class="search" placeholder="🔍" >
+            <a href="wishlist" class="wishlist">Wishlist ♡</a>
+            <a href="cart" class="cart">Cart 🛒</a>
+            <a href="myaccount" class="myacc">My account 👤</a>
+            <button class="login">Login/Signup</button>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="image">
+            <img src="./assets/Images/shopify-development.png" class="shopify-image">
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td><img src="./assets/Images/download (2).jpg"></td>
+                    <td><img src="./assets/Images/download (3).jpg"></td>
+                    <td><img src="./assets/Images/images.jpg"></td>
+                    <td><img src="./assets/Images/images (1).jpg"></td>
+                </tr>
+            </table>
+        </div>
+        <section id="Women">
+            <h1>Women</h1>
+            <div>
+                <table>
+                    <tr>
+                        <td class="product-image"><img src="./assets/Images/women1.jpg" class="womenimage"></td>
+                        <td class="product-image"><img src="./assets/Images/women2.jpg"></td>
+                        <td class="product-image"><img src="./assets/Images/women3.jpg"></td>
+                        <td class="product-image"><img src="./assets/Images/women4.jpg"></td>
+                        <td class="product-image"><img src="./assets/Images/women5.jpg"></td>
+                        <td class="product-image"><img src="./assets/Images/women6.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td class="product-name">T-Shirt</td>
+                        <td class="product-name">Gown</td>
+                        <td class="product-name">Saree</td>
+                        <td class="product-name">Kurta</td>
+                        <td class="product-name">Salwar</td>
+                        <td class="product-name">Tops</td>
+                    </tr>
+                    <tr>
+                        <td class="product-description">Panda Printed Women t-shirt</td>
+                        <td class="product-description">Floral Embroided Gown</td>
+                        <td class="product-description">Semi-silk gold printed saree</td>
+                        <td class="product-description">A-line Cotton Kurta</td>
+                        <td class="product-description">Soft-Silk Salwar set</td>
+                        <td class="product-description">White Cotton Tiered Top</td>
+                    </tr>
+                    <tr>
+                        <td class="product-price"><b>₹499</b> <del>₹799</del><span>(30% OFF)</span></td>
+                        <td class="product-price"><b>₹1699</b><del>₹3000</del><span>(50% OFF)</span></td>
+                        <td class="product-price"><b>₹899</b><del>₹1599</del><span>(20% OFF)</span></td>
+                        <td class="product-price"><b>₹699</b><del>₹999</del><span>(10% OFF)</span></td>
+                        <td class="product-price"><b>₹1099</b><del>$1799</del><span>(20% OFF)</span></td>
+                        <td class="product-price"><b>₹899</b><del>₹1599</del><span>(40% OFF)</span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="color: red; text-align: center; font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Only Few Left!</td>
+                        <td></td>
+                        <td><td style="color: red; text-align: center; font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Only Few Left!</td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐⭐</td>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐⭐⭐</td>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐</td>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐⭐⭐⭐</td>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐⭐⭐⭐</td>
+                        <td style="text-align: center;font-size: 10px;">⭐</td>
+                    </tr>
+                    <tr>
+                    <td style="text-align: center;"><button style="color: red; ">♡</button><button style="position: relative; left: 10px;" >🛒</button></td>
+                    <td style="text-align: center;" ><button style="color: red; ">♡</button><button style="position: relative; left: 10px;">🛒</button></td>
+                    <td style="text-align: center;"><button style="color: red; ">♡</button><button style="position: relative; left: 10px; ">🛒</button></td>
+                    <td style="text-align: center;"><button style="color: red; ">♡</button><button style="position: relative; left: 10px;">🛒</button></td>
+                    <td style="text-align: center;"><button style="color: red; ">♡</button><button style="position: relative; left: 10px;">🛒</button></td>
+                    <td style="text-align: center;"><button style="color: red; ">♡</button><button style="position: relative; left: 10px;">🛒</button></td>
+                    
+                    </tr>
+                    <tr>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="men">
+            <div>
+                <h1>Men</h1>
+                <table>
+                    <tr>
+                        <td class="product-image"><img src="./assets/Images/men1.jpg" class="womenimage"></td>
+                        <td class="product-image"><img src="./assets/Images/men2.jpg"></td>
+                        <td class="product-image"><img src="./assets/Images/men3.jpg"></td>
+                        <td class="product-image"><img src="./assets/Images/men4.jpg"></td>
+                        <td class="product-image"><img src="./assets/Images/men5.jpg"></td>
+                        <td class="product-image"><img src="./assets/Images/men6.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td class="product-name">T-Shirt</td>
+                        <td class="product-name">Shirt</td>
+                        <td class="product-name">Jean Shirt</td>
+                        <td class="product-name">Jean Pant</td>
+                        <td class="product-name">Vesti-Shirt</td>
+                        <td class="product-name">Formal Pant</td>
+                    </tr>
+                    <tr>
+                        <td class="product-description">Maroon Printed men t-shirt</td>
+                        <td class="product-description">Double Pocket Purple Shirt</td>
+                        <td class="product-description">Blue-Jean Shirt</td>
+                        <td class="product-description">Soft men Jean Pant</td>
+                        <td class="product-description">Traditional Men's Vesti-Shirt</td>
+                        <td class="product-description">Office Wear Formal Pant</td>
+                    </tr>
+                    <tr>
+                        <td class="product-price"><b>₹499</b> <del>₹799</del><span>(30% OFF)</span></td>
+                        <td class="product-price"><b>₹1699</b><del>₹3000</del><span>(50% OFF)</span></td>
+                        <td class="product-price"><b>₹899</b><del>₹1599</del><span>(20% OFF)</span></td>
+                        <td class="product-price"><b>₹699</b><del>₹999</del><span>(10% OFF)</span></td>
+                        <td class="product-price"><b>₹1099</b><del>$1799</del><span>(20% OFF)</span></td>
+                        <td class="product-price"><b>₹899</b><del>₹1599</del><span>(40% OFF)</span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="color: red; text-align: center; font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Only Few Left!</td>
+                        <td></td>
+                        <td><td style="color: red; text-align: center; font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Only Few Left!</td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐⭐</td>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐⭐⭐</td>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐</td>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐⭐⭐⭐</td>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐⭐⭐⭐</td>
+                        <td style="text-align: center;font-size: 10px;">⭐</td>
+                    </tr>
+                    <tr>
+                    <td style="text-align: center;"><button style="color: red; ">♡</button><button style="position: relative; left: 10px;" >🛒</button></td>
+                    <td style="text-align: center;" ><button style="color: red; ">♡</button><button style="position: relative; left: 10px;">🛒</button></td>
+                    <td style="text-align: center;"><button style="color: red; ">♡</button><button style="position: relative; left: 10px; ">🛒</button></td>
+                    <td style="text-align: center;"><button style="color: red; ">♡</button><button style="position: relative; left: 10px;">🛒</button></td>
+                    <td style="text-align: center;"><button style="color: red; ">♡</button><button style="position: relative; left: 10px;">🛒</button></td>
+                    <td style="text-align: center;"><button style="color: red; ">♡</button><button style="position: relative; left: 10px;">🛒</button></td>
+                    
+                    </tr>
+                    <tr>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="electronics">
+            <div>
+                <h1>Electronics</h1>
+                <table>
+                    <tr>
+                        <td class="product-image"><img src="./assets/Images/ele1.jpg" class="womenimage"></td>
+                        <td class="product-image"><img src="./assets/Images/ele2.jpg"></td>
+                        <td class="product-image"><img src="./assets/Images/ele3.jpg"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="product-name">Mobile Phone</td>
+                        <td class="product-name">Headphone</td>
+                        <td class="product-name">Laptop</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="product-description">Redmi A3x Mobile 5g</td>
+                        <td class="product-description">Black Wireless Headphone</td>
+                        <td class="product-description">hp Laptop -black</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="product-price"><b>₹14999</b> <del>₹79999</del><span>(30% OFF)</span></td>
+                        <td class="product-price"><b>₹1699</b><del>₹3000</del><span>(50% OFF)</span></td>
+                        <td class="product-price"><b>₹58999</b><del>₹78599</del><span>(20% OFF)</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="color: red; text-align: center; font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Only Few Left!</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐⭐</td>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐⭐⭐</td>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐</td>
+                        
+                    </tr>
+                    <tr>
+                    <td style="text-align: center;"><button style="color: red; ">♡</button><button style="position: relative; left: 10px;" >🛒</button></td>
+                    <td style="text-align: center;" ><button style="color: red; ">♡</button><button style="position: relative; left: 10px;">🛒</button></td>
+                    <td style="text-align: center;"><button style="color: red; ">♡</button><button style="position: relative; left: 10px; ">🛒</button></td>
+                    
+                    
+                    </tr>
+                    <tr>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="furniture">
+            <div>
+                <h1>Furniture</h1>
+                <table>
+                    <tr>
+                        <td class="product-image"><img src="./assets/Images/furniture1.jpg" class="womenimage"></td>
+                        <td class="product-image"><img src="./assets/Images/furniture2.jpg"></td>
+
+                        
+                    </tr>
+                    <tr>
+                        <td class="product-name">Sofa</td>
+                        <td class="product-name">Dining Table</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="product-description">3 Seater Brown Sofa</td>
+                        <td class="product-description">4 seater wooden Dining Table</td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td class="product-price"><b>₹14999</b> <del>₹79999</del><span>(30% OFF)</span></td>
+                        <td class="product-price"><b>₹1699</b><del>₹3000</del><span>(50% OFF)</span></td>
+                       
+                        
+                    </tr>
+                    <tr>
+                        <td style="color: red; text-align: center; font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Only Few Left!</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐⭐</td>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐⭐⭐</td>
+                       
+                        
+                    </tr>
+                    <tr>
+                    <td style="text-align: center;"><button style="color: red; ">♡</button><button style="position: relative; left: 10px;" >🛒</button></td>
+                    <td style="text-align: center;" ><button style="color: red; ">♡</button><button style="position: relative; left: 10px;">🛒</button></td>
+                    
+                    
+                    
+                    </tr>
+                    <tr>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                       
+                        
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="kids">
+            <div>
+                <h1>Kids</h1>
+                <table>
+                    <tr>
+                        <td class="product-image"><img src="./assets/Images/kids1.jpg" class="womenimage"></td>
+                        <td class="product-image"><img src="./assets/Images/kids2.jpg"></td>
+                        <td class="product-image"><img src="./assets/Images/kids3.jpg"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="product-name">Gown</td>
+                        <td class="product-name">Pant Shirt</td>
+                        <td class="product-name">Salwar</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="product-description">girl kid Long Gown</td>
+                        <td class="product-description">Boy Kid Pant Shirt</td>
+                        <td class="product-description">Girl kid Salwar-Set</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="product-price"><b>₹4999</b> <del>₹9999</del><span>(30% OFF)</span></td>
+                        <td class="product-price"><b>₹1699</b><del>₹3000</del><span>(50% OFF)</span></td>
+                        <td class="product-price"><b>₹8999</b><del>₹8599</del><span>(20% OFF)</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="color: red; text-align: center; font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Only Few Left!</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐⭐</td>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐⭐⭐</td>
+                        <td style="text-align: center;font-size: 10px;">⭐⭐</td>
+                        
+                    </tr>
+                    <tr>
+                    <td style="text-align: center;"><button style="color: red; ">♡</button><button style="position: relative; left: 10px;" >🛒</button></td>
+                    <td style="text-align: center;" ><button style="color: red; ">♡</button><button style="position: relative; left: 10px;">🛒</button></td>
+                    <td style="text-align: center;"><button style="color: red; ">♡</button><button style="position: relative; left: 10px; ">🛒</button></td>
+                    
+                    
+                    </tr>
+                    <tr>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        <td><button style="width: 200px; height: 30px; color: rgb(196, 7, 38); border-color:red;">Buy Now</button></td>
+                        
+                    </tr>
+                </table>
+            </div>
+        </section>
+        </div>
+    </main>
+</body>
+</html>
