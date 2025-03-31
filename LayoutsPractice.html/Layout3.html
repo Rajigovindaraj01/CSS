@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout-3</title>
+    <style>
+        .container{
+            height: 90vh;
+            width: 100vw;
+            border: 20px solid black;
+            padding: 20px;
+        }
+        .row1{
+            display: flex;
+            height: 30vh;
+            width: 100vw;
+        }
+        .col1{
+            height: 30vh;
+            width: 30vw;
+            border: 2px solid rgb(0, 255, 213);
+            background: linear-gradient(to right, #5f0bb8, #7e96c0);
+        }
+        .col2{
+            display: flex;
+            flex-direction: column;
+        }
+        .col2-row1{
+            height: 15vh;
+            width: 70vw;
+            border: 2px solid pink;
+            background: linear-gradient(to right, #c7464a, #fad0c4);
+        }
+        .col2-row2{
+            height: 15vh;
+            width: 70vw;
+            border: 2px solid pink;
+            background: linear-gradient(to left, #1751ad, #87b9cf);
+        }
+        .row2{
+            height: 30vh;
+            width: 100vw;
+            border: 2px solid red;
+            background: linear-gradient(135deg, #ecea6b, #2eb657);
+        }
+        .row3{
+            display: flex;
+            flex-direction: row;
+        }
+        .col3{
+            flex-direction: column;
+            display: flex;
+        }
+        .col3-row1{
+            height: 15vh;
+            width: 60vw;
+            border: 2px solid green;
+            background: linear-gradient(to right, #38ef7d, #11998e);
+        }
+        .col3-row2{
+            height: 15vh;
+            width: 60vw;
+            border: 2px solid green;
+            background: linear-gradient(to right, #ff7eb3, #a31d33);
+        }
+        .row3-col1{
+            height: 30vh;
+            width: 20vw;
+            border: 2px solid purple;
+            background: linear-gradient(to right, #d4fc79, #96e6a1);
+        }
+        .row3-col2{
+            height: 30vh;
+            width: 20vw;
+            border: 2px solid rgb(231, 221, 76);
+            background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+            font-family: "Berkshire Swash", serif;
+            text-shadow: 5px 5px 10px rgb(78, 78, 78);
+            background: linear-gradient(135deg,rgb(243, 215, 227),rgb(182, 247, 222));
+            padding: 20px;
+            width: 500px;
+            margin: auto;
+            border-radius: 100px 0px 100px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gradient Colours Gallery</h1><br>
+   <div class="container">
+    <div class="row1">
+        <div class="col1">
+
+        </div>
+        <div class="col2">
+            <div class="col2-row1">
+
+            </div>
+            <div class="col2-row2">
+
+            </div>
+        </div>
+    </div>
+    <div class="row2">
+
+    </div>
+    <div class="row3">
+        <div class="col3">
+            <div class="col3-row1">
+
+            </div>
+            <div class="col3-row2">
+
+            </div>
+        </div>
+        <div class="row3-col1">
+
+        </div>
+        <div class="row3-col2">
+
+        </div>
+    </div>
+   </div> 
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cssday5-sample mini Project</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+         nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(51, 51, 51, 0.9);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        
+        nav a:hover {
+            background: #50e3c2;
+            color: #333;
+        }
+
+        .section1{
+            background-image: url(./assets/Images/sportscar.jpg);
+            height: 600px;
+            width: 100vw;
+            background-size: cover;
+        }
+
+        .section1 p{
+            color: white;
+            margin: auto;
+            position: relative;
+            top: 200px;
+            font-size: 40px;
+            background-color: rgba(45, 46, 128, 0.877);
+            padding: 30px;
+            border-radius: 10px;
+            width: 500px;
+            text-align: center;
+            align-content: center;
+        }
+
+        .section2{
+            background-image: url(./assets/Images/electricar.jpg);
+            height: 600px;
+            width: 100vw;
+            background-size: cover;
+        }
+
+        .section2 p{
+            color: white;
+            margin: auto;
+            position: relative;
+            top: 200px;
+            font-size: 40px;
+            background-color: rgba(10, 135, 151, 0.877);
+            padding: 30px;
+            border-radius: 10px;
+            width: 500px;
+            text-align: center;
+            align-content: center;
+        }
+        .section3{
+            background-image: url(./assets/Images/luxurycar.jpeg);
+            height: 600px;
+            width: 100vw;
+            background-size: cover;
+        }
+
+        .section3 p{
+            color: white;
+            margin: auto;
+            position: relative;
+            top: 200px;
+            font-size: 40px;
+            background-color: rgba(64, 74, 75, 0.877);
+            padding: 30px;
+            border-radius: 10px;
+            width: 500px;
+            text-align: center;
+            align-content: center;
+        }
+
+        .section4{
+            background-image: url(./assets/Images/contactus.jpg);
+            height: 600px;
+            width: 100vw;
+            background-size: cover;
+        }
+
+        .section4 p{
+            color: white;
+            margin: auto;
+            position: relative;
+            top: 200px;
+            font-size: 40px;
+            background-color: rgba(64, 74, 75, 0.877);
+            padding: 30px;
+            border-radius: 10px;
+            width: 500px;
+            text-align: center;
+            align-content: center;
+        }
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100vw;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#section1">Sports Cars</a>
+            <a href="#section2">Electric Cars</a>
+            <a href="#section3">Luxury Cars</a>
+            <a href="#section4">Contact Us</a>
+        </nav>    
+    </header>
+    <main>
+        <section id="section1" class="section1">
+            <p>Experience the thrill of high-speed sports cars with cutting-edge technology and performance.</p>
+        </section>
+        <section id="section2" class="section2">
+             <p>Explore the future of driving with eco-friendly, high-performance electric vehicles.</p>
+        </section>
+        <section id="section3" class="section3">
+            <p>Indulge in the comfort and elegance of luxury cars, designed for the ultimate driving experience.</p>
+        </section>
+        <section id="section4" class="section4">
+            <p> Email:cars@gmail.com<br>
+                Call: +91 9876543215
+            </p>
+        </section>
+    </main>
+    <footer>
+        © 2025 cars | All Rights Reserved
+    </footer>
+</body>
+</html>

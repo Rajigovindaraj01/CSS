@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY7-SAMPLE MINI PROJECT 2</title>
+    <style>
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .background{
+            background-image: url(./assets/Images/bcfruits.jpg);
+            height: 700px;
+            width: 1400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .background1{
+            background-color: rgba(82, 79, 65, 0.4);
+            height: 500px;
+            width: 1000px;
+            margin: auto;
+            position: relative;
+            top: 50px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px;
+        }
+        .background1 h1{
+            text-align: center;
+            padding: 20px;
+            color: whitesmoke;
+            font-family: sans-serif;
+            text-shadow: 5px 5px 10px black;
+        }
+        .card{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            background: linear-gradient(135deg,rgb(190, 44, 68),rgb(126, 4, 126));
+            padding: 50px;
+            align-items: center;
+            justify-content: center;
+            width: 700px;
+            margin: auto;
+            border-radius: 20px;
+            position: relative;
+            top: 10px;
+        }
+
+        .wrap-item {
+            width: 120px;
+            height: 120px;
+            background:linear-gradient(135deg,rgb(170, 204, 47),rgb(51, 245, 229));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 8px 8px 10px black;
+            transition: cubic-bezier(0.23, 1, 0.320, 1);
+        }
+        .wrap-item:hover {
+        transform: scale(1.2); /* Increases size by 20% */
+        transition: transform 0.3s ease-in-out; /* Smooth transition */
+        }
+
+        .wrap-item img{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="background1">
+            <h1>Welcome to Our Fruit shop</h1>
+            <div class="card">
+                <div class="wrap-item">
+                    <img src="./assets/Images/apple-removebg-preview.png">
+                </div>
+                <div class="wrap-item">
+                    <img src="./assets/Images/pine-removebg-preview.png">
+                </div>
+                <div class="wrap-item">
+                    <img src="./assets/Images/guava-removebg-preview.png">
+                </div>
+                <div class="wrap-item">
+                    <img src="./assets/Images/mango-removebg-preview.png">
+                </div>
+                <div class="wrap-item">
+                    <img src="./assets/Images/papaya-removebg-preview.png">
+                </div>
+                <div class="wrap-item">
+                    <img src="./assets/Images/orange-removebg-preview.png">
+                </div>
+                <div class="wrap-item">
+                    <img src="./assets/Images/pomegranate-removebg-preview.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

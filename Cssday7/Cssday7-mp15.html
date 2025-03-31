@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-day7-miniproject15</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Rochester&family=Sacramento&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .background{
+            background-image: url(./assets/Images/bac.jpg);
+            height: 600px;
+            width: 1400px;
+            background-size: cover;
+        }
+        .background1{
+            background-color: rgba(4, 189, 164, 0.4);
+            height: 500px;
+            width: 1200px;
+            margin: auto;
+            position: relative;
+            top: 50px;
+            border-radius: 30px;
+            box-shadow: 5px 5px 10px black;
+        }
+        .background1 h1{
+            text-align: center;
+            padding: 30px;
+            color: white;
+            background-color: rgba(2, 59, 51, 0.829);
+            font-family: "Rochester", cursive;
+            text-shadow: 5px 5px 10px black;
+        }
+        .card{
+            background-color: rgba(2, 70, 61, 0.4);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 50px;
+            align-items: center;
+            justify-content: center;
+            width: 900px;
+            margin: auto;
+            border-radius: 20px;
+            position: relative;
+            top: 10px;
+            box-shadow: 5px 5px 10px black;
+        }
+
+        .wrap-item {
+            width: 120px;
+            height: 120px;
+            background:linear-gradient(135deg,rgb(170, 204, 47),rgb(9, 156, 144));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 8px 8px 10px black;
+            transition: cubic-bezier(0.23, 1, 0.320, 1);
+        }
+        .wrap-item:hover {
+        transform: scale(1.2); /* Increases size by 20% */
+        transition: transform 0.3s ease-in-out; /* Smooth transition */
+        }
+
+        .wrap-item img{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="background1">
+            <h1>🐟 Welcome to Our Fish Gallery🦈</h1>
+            <div class="card">
+                <div class="wrap-item">
+                   <img src="./assets/Images/f1-removebg-preview.png">
+                </div>
+                <div class="wrap-item">
+                <img src="./assets/Images/f2-removebg-preview.png">
+                </div>
+                <div class="wrap-item">
+                   <img src="./assets/Images/f3-removebg-preview.png">
+                </div>
+                <div class="wrap-item">
+                    <img src="./assets/Images/f4-removebg-preview.png">
+                </div>
+                <div class="wrap-item">
+                    <img src="./assets/Images/f5-removebg-preview.png">
+                </div>
+                <div class="wrap-item">
+                    <img src="./assets/Images/f6-removebg-preview.png">
+                </div>
+                <div class="wrap-item">
+                    <img src="./assets/Images/f7-removebg-preview.png">
+                </div>
+                <div class="wrap-item">
+                    <img src="./assets/Images/f8-removebg-preview.png">
+                </div>
+                <div class="wrap-item">
+                    <img src="./assets/Images/f9-removebg-preview.png">
+                </div>
+                <div class="wrap-item">
+                    <img src="./assets/Images/f10-removebg-preview.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

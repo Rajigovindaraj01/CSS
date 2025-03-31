@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            background-color: #333;
+            color: white;
+            padding: 2vh 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav h2 {
+            margin-left: 2vw;
+            font-size: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 1.5vw;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 1vh 1.5vw;
+            transition: 0.3s;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff9800;
+            border-radius: 0.5rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 10vh 5vw;
+            text-align: center;
+        }
+
+        #home {
+            background: linear-gradient(135deg, #8b5605, #ff5722);
+            color: white;
+            padding: 15vh 5vw;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        .image {
+            height: 20vmin;
+            width: 20vmin;
+            border-radius: 2em;
+        }
+
+        /* About Section */
+        #about p {
+            font-size: 1.5rem;
+            line-height: 1.6em;
+        }
+
+        /* Projects */
+        #projects .image-container {
+            width: 80vw;
+            max-width: 60vmax;
+            height: 30vh;
+            margin: auto;
+            display: flex;
+            gap: 2vw;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #projects .image-container img {
+            width: 45%;
+            height: auto;
+            border-radius: 1rem;
+            box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact */
+        #contact {
+            background-color: #333;
+            color: white;
+        }
+
+        #contact p {
+            font-size: 1.5rem;
+        }
+
+        /* Skills Table */
+        .skills-table {
+            width: 90vw;
+            max-width: 60vmax;
+            text-align: center;
+            margin: 5vh auto;
+            border-collapse: collapse;
+        }
+
+        .skills-table td {
+            padding: 3vh;
+            border: 0.3rem solid #ddd;
+            width: 50%;
+        }
+
+        .skills-table img {
+            width: 8vmin;
+            height: 8vmin;
+        }
+
+        .skills-table p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 1vh;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>My Portfolio</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Rajeshwari, a passionate MERN stack developer.</p>
+        <div class="image-container">
+            <img src="./assets/Images/91spIkbEsTKvD.png!sw800" class="image">
+        </div>
+    </section>
+    
+    <section id="about">
+        <div>
+            <h2>About Me</h2>
+            <p>Passionate developer specializing in React.js, Node.js, and MongoDB.</p>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <table class="skills-table">
+            <tr>
+                <td>
+                    <img src="https://cdn-icons-png.flaticon.com/128/919/919851.png" alt="HTML">
+                    <p>HTML</p>
+                </td>
+                <td>
+                    <img src="https://cdn-icons-png.flaticon.com/128/919/919826.png" alt="CSS">
+                    <p>CSS</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </td>
+                <td>
+                    <img src="https://cdn-icons-png.flaticon.com/128/1126/1126012.png" alt="React">
+                    <p>React</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    
+    <section id="projects">
+        <div>
+            <h2>Projects</h2>
+            <br>
+            <div class="image-container">
+                <img src="./assets/Images/download.jpg">
+                <img src="./assets/Images/download (1).jpg">
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div>
+            <h2>Contact Me</h2>
+            <p>Email: rajeshwari@example.com</p>
+        </div>
+    </section>
+</body>
+</html>

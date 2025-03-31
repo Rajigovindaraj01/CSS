@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-day6-Sample Mini Project-2</title>
+    <style>
+        .background{
+            background-image: url(./assets/images/Space-HD-Backgrounds-Computer.jpg);
+            height: 600px;
+            width: 100vw;
+            background-size: cover;
+        }
+        .background1{
+            background-color: rgba(129, 147, 226, 0.5);
+            height: 500px;
+            width: 80vw;
+            margin: auto;
+            border-radius: 10px;
+            position: relative;
+            top: 50px;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(43, 45, 51, 0.5);
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            border-top: 10px solid rgb(20, 20, 104);
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card {
+            width: 300px;
+            border: 5px solid #0f3460;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            background: #1b1b3a;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="background1">
+            <header>
+                🚀 Explore the Wonders of Space 🌌
+            </header>
+            <div class="container">
+                <div class="card">
+                    <img src="./assets/images/mars.jpg" alt="Mars">
+                    <div class="card-content">
+                        <h3>Mars 🪐</h3>
+                        <p>Explore the red planet and its potential for future colonization.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="./assets/images/moon.jpg" alt="Moon">
+                    <div class="card-content">
+                        <h3>The Moon 🌙</h3>
+                        <p>Walk where astronauts have landed and discover its hidden mysteries.</p>
+                    </div>
+                </div>
+                
+                <div class="card" style="height: 300px;">
+                    <img src="./assets/images/Andromeda Galaxy.jpg" height="100px" alt="Andromeda Galaxy">
+                    <div class="card-content">
+                        <h3>Andromeda Galaxy 🌌</h3>
+                        <p>The nearest galaxy to the Milky Way, a glimpse into the cosmic vastness.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <footer>
+                🌍 One Small Step, One Giant Leap 🚀
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

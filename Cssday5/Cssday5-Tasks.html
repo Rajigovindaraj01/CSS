@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CssDay-5-Tasks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        h1{
+            text-align: center;
+            background: linear-gradient(135deg,pink,red);
+            padding: 20px;
+        }
+        section{
+            border: 3px solid blue;
+            height: 100px;
+            width: 300px;
+            background:linear-gradient(135deg , rgb(0, 255, 200),rgb(54, 80, 79));
+            text-align: center;
+            align-content: center;
+            color: rgb(200, 224, 238);
+        }
+
+        button{
+            border-radius: 15px;
+            height: 50px;
+            width: 150px;
+            background: linear-gradient(135deg,rgb(149, 253, 253),rgb(6, 75, 116));
+            border: none;
+            color: white;
+            font-size: 15px;
+        }
+
+        .task55{
+            box-shadow: 10px 10px 10px 3px grey;
+            height: 200px;
+            width: 500px;
+            background:linear-gradient(135deg , rgb(248, 227, 227) ,rgb(231, 123, 141));
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        header{
+            background-color: lightyellow;
+            text-align: center;
+            font-family:  'Chewy', system-ui;
+            padding: 20px;
+        }
+
+        .scroll-box {
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            border: 8px solid #f56d6d;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            overflow-y: auto;
+            margin: auto;
+        }
+
+        .task58-1{
+            background-image: url(./assets/Images/background.jpg);
+            height: 500px;
+            width: 1000px;
+        }
+        .task58{
+            background-image: url(./assets/Images/background.jpg);
+            height: 500px;
+            width: 1000px;
+            background-repeat: no-repeat;
+        }
+
+        .task60{
+            background-image: url(./assets/Images/123.webp);
+            height: 200px;
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        .task60 h3,p{
+            background: linear-gradient(to right , pink,rgb(163, 163, 219));
+            height: 100px;
+            width: 400px;
+            font-family: sans-serif;
+            text-align: center;
+            margin: auto;
+            position: relative;
+            top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .task61{
+            background:linear-gradient( to right , rgb(241, 219, 223) , rgb(213, 224, 240),rgb(248, 206, 206));
+            height: 100px;
+        }
+
+        .container{
+            background-attachment:fixed;
+        }
+
+        .task62{
+            width: 200px;
+            height: 300px;
+            border: 10px solid transparent; /* Border required for border-image */
+            border-image: url('./assets/Images/border.webp') 30 round;
+            margin: auto;
+            background:linear-gradient(135deg,white, pink);
+            text-align: center;
+            font-size: 50px;
+            
+        }
+        .p1{
+            font-family:  'Sacramento', cursive;
+            background-size: cover;
+            top: 100px;
+            position: relative;
+        }
+
+
+        .task63{
+            height: 300px;
+            width: 200px;
+            background: linear-gradient(135deg , rgb(245, 245, 239) , rgb(223, 213, 195));
+            border-radius: 10px;
+            margin: auto;
+            box-shadow: 10px 10px 10px grey;
+        }
+        .icecream{
+            height: 200px;
+            position: relative;
+            margin: auto;
+            bottom: 80px;
+            left: 10px;
+        }
+
+
+
+        .task64{
+            background:linear-gradient(to right , rgb(35, 35, 109), rgb(96, 119, 126));
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 10px 10px 15px rgba(214, 26, 26, 0.2);
+        }
+        .task64:hover {
+            box-shadow: 10px 10px 15px rgba(121, 83, 209, 0.4);
+        }
+
+        .container1 {
+            width: 450px;
+            height: 200px;
+            background: linear-gradient(135deg,rgb(236, 252, 255),rgb(236, 191, 223));
+            border: 4px solid #333;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 25px 10px 15px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            width: 500px;
+            font-size: 18px;
+            color: #444;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>    
+    <h1>CSS-DAY5-TASKS</h1>
+<!-- CSS 53: Add a solid blue border with a width of 3px to a <section>. -->
+    <h3>Task-53</h3>
+    <section>
+        <h2>Welcome</h2>
+    </section>
+    <hr>
+
+<!-- CSS 54: Style a button with rounded corners using border-radius: 15px. -->
+    <h3>Task-54</h3>
+    <button>
+        Click Me
+    </button>
+    <hr>
+
+<!-- CSS 55: Create a box-shadow for a <div> that simulates a lifted card effect. -->
+    <h3>Task-55</h3>
+    <div class="task55">
+        <h2 style="position:relative; text-align: center;top: 20px;">Welcome to Vetri Technology System</h2>
+        <p style="
+        position: relative; 
+        text-align: center; 
+        top: 30px; 
+        line-height: 30px; 
+        font-size: 20px; 
+        padding: 10px; 
+        font-family: 'Dancing Script', cursive;
+        font-weight: bold;">
+        Innovative solutions for a smarter future. We specialize in cutting-edge technology services to drive business growth and efficiency.
+    </p>
+    </div>
+    <br>
+    <br>
+    <hr>
+
+<!-- CSS 56: Add a text-shadow to a <h1> to make it stand out on a banner. -->
+    <h3>Task-56</h3>
+    <h1 style="font-family:  'Oleo Script', system-ui; text-shadow: 10px 5px 5px rgb(243, 236, 236);">Vetri Techonlogy System</h1>
+    <hr>
+
+<!-- CSS 57: Apply a background-color: lightyellow to a <header>. -->
+    <h3>Task-57</h3>
+    <header>
+        Vetri Technology System Provides best Training for the students
+    </header>
+    <hr>
+
+<!-- CSS 58: Create a scrollable content box with overflow-y: auto and custom-styled scrollbars. -->
+    <h3>Task-58</h3>
+    <div class="scroll-box">
+        <h4 style="text-align: center;font-family: 'Oleo Script', system-ui; font-size: 20px;">Vetri Technology System</h5>
+        <p>
+          Welcome to our platform! We provide innovative solutions to simplify your digital experience. Explore our features and discover the future of technology.
+        </p>
+        <p>
+          Our services include web development, AI solutions, and cloud computing. We focus on efficiency, security, and performance to help businesses grow.
+        </p>
+        <p>
+          Join us today and take your business to the next level with cutting-edge technology.
+        </p>
+      </div>
+      <hr>
+
+<!-- CSS 59: Prevent the background image from repeating using background-repeat: no-repeat. -->
+    <h3>Task-59</h3>
+    <div class="task58-1">
+    </div>
+    <h3>After apply no-repeat</h3>
+    <div class="task58">
+    </div>
+    <hr>
+
+<!-- CSS 60: Use background-size: cover to make an image fill the <header>. -->
+    <h3>Task-60</h3>
+        <header class="task60">
+            <h3>Welcome To My website<br><br>
+            Join us today and take your business to the next level with cutting-edge technology.</h3>
+        </header>
+        <hr>
+
+<!-- CSS 61: Apply a fixed background image to a <footer> using background- attachment. -->
+     <h3>Task-61</h3>
+     <div class="container">
+     <header class="task60">
+        <h3>Welcome To My website<br><br>
+        Join us today and take your business to the next level with cutting-edge technology.</h3>
+    </header>
+    <footer class="task61" style="text-align: center">
+    </footer>
+     </div>
+     <hr>
+
+
+<!-- CSS 62: Use border-image to apply a decorative border to a <div>. -->
+    <h3>Task-62</h3>
+    <div class="task62">
+        <span class="p1">Greetings</span>
+    </div>
+    <hr>
+
+<!-- CSS 63: Combine box-shadow and border-radius to create a modern card design. -->
+    <h3>Task-63</h3>
+    <div class="task63">
+        <img src="./assets/Images/icecream-removebg-preview.png" class="icecream">
+         <span style="position: relative; bottom: 80px; left: 10px; font-family: sans-serif; color: brown; font-weight: bold; font-size: 15px;">CHOCOLATE ICE-CREAM</span>
+         <span style="position: relative; bottom: 70px; left: 10px; font-family: sans-serif; color: rgb(31, 14, 14); font-weight: bold; font-size: 20px;"> ₹110</span>
+        <span style="position: relative; font-size: 15px; font-family: sans-serif; bottom: 50px;  ; left: 10px; ">Ice-cream with rich Flavours high quality ingredients</span>
+        <button style="border-radius: 10px;position: relative; bottom: 40px; left: 10px;background: linear-gradient(135deg,rgb(207, 155, 155),brown);">Order Now</button>
+    </div>
+    <hr>
+
+<!-- CSS 64: Create a button with a hover effect that changes its box-shadow. -->
+    <h3>Task-64</h3>
+    <button class="task64">Hover Me</button>
+    <hr>
+
+
+
+<!-- CSS 65: Design a container with hidden overflow (overflow: hidden) and clipped content. -->
+    <h3>Task-65</h3>
+    <div class="container1">
+        <div class="content">
+            Explore the limitless possibilities of technology. Innovation drives progress, and creativity shapes the future. Stay ahead with groundbreaking solutions and smart ideas that transform the world around us.
+        </div>
+    </div>
+    <hr>
+</body>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY7-SAMPLE MINI PROJECT 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .background{
+            background-image: url(./assets/Images/rab-background);
+            height: 600px;
+            background-repeat: no-repeat;
+            width: 1000px;
+            background-size: cover;
+            margin: auto;
+        }
+        .card{
+            background-color: rgba(129, 122, 122, 0.5);
+            height: 400px;
+            width: 800px;
+            margin: auto;
+            position: relative;
+            top:100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            flex-wrap: wrap;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px rgb(63, 60, 60);
+        }
+        .card h1{
+            color: rgb(252, 251, 253);
+            font-family: "Berkshire Swash", serif;
+            letter-spacing: 1px;
+            font-size: 50px;
+            text-shadow: 5px 5px 10px rgb(63, 60, 60);
+        }
+
+        .username{
+            height: 50px;
+            width: 300px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgba(252, 251, 251, 0.849);
+            box-shadow: 5px 5px 10px rgb(63, 60, 60);
+        }
+        .password{
+            height: 50px;
+            width: 300px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgba(252, 251, 251, 0.849);
+            box-shadow: 5px 5px 10px rgb(63, 60, 60);
+        }
+        .card button{
+            height: 50px;
+            width: 300px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgba(52, 216, 194, 0.849);
+            font-weight: bold;
+            font-size: 15px;
+            box-shadow: 5px 5px 10px rgb(1, 104, 99);
+        }
+        .card button:hover{
+            background-color: rgba(8, 99, 87, 0.849);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="card">
+            <h1>Login</h1>
+            <input type="text" placeholder="UserName" class="username">
+            <input type="password" placeholder="Password" class="password">
+            <button>Login In</button>
+        </div>
+    </div>
+</body>
+</html>

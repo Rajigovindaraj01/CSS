@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-day6-Sample Mini Project-1</title>
+    <style>
+        .background{
+            background-image: url(./assets/images/travelback.jpg);
+            height: 580px;
+            width: 100vw;
+            background-size: cover;
+        }
+        .background1{
+            background-color: rgba(189, 77, 77, 0.5);
+            height: 450px;
+            width: 1200px;
+            margin: auto;
+            position: relative;
+            top: 60px;
+            border-radius: 20px;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(3, 19, 54, 0.589);
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card {
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 10 4px 8px rgba(0, 0, 0, 0.2);
+            background: white;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        footer {
+            background-color: rgba(3, 19, 54, 0.589);
+            color: white;
+            padding: 15px;
+            margin-top: 10px;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="background1">
+            <header>🌍 Top Travel Destinations ✈️</header>
+    <div class="container">
+        <div class="card">
+            <img src="./assets/images/paris.jpg" alt="Paris">
+            <div class="card-content">
+                <h3>Paris, France 🇫🇷</h3>
+                <p>Home to the Eiffel Tower and delicious pastries. 🗼🥐</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./assets/images/kyoto.jpg" alt="Kyoto">
+            <div class="card-content">
+                <h3>Kyoto, Japan 🇯🇵</h3>
+                <p>Famous for cherry blossoms and traditional tea houses. 🌸⛩️</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./assets/images/maldives.jpg" alt="Maldives">
+            <div class="card-content">
+                <h3>Maldives 🇲🇻</h3>
+                <p>A paradise with crystal-clear waters and luxury resorts. 🏝️🌊</p>
+            </div>
+        </div>
+    </div>
+    <footer>📍 Explore the World | Travel More, Worry Less</footer>
+        </div>
+    </div>
+</body>
+</html>

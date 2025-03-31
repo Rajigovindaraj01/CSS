@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        .background{
+            background-image: url(./assets/Images/day4css-back.jpg);
+            height: 400px;
+            width: 700px;
+        }
+
+        nav{
+            position: relative;
+            margin: auto;
+            top: 30px;
+            word-spacing: 10px;
+            margin-left: 50px;
+        }
+
+        nav a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            border-radius: 10px;
+            background-color: rgba(0, 204, 255, 0.144);
+            padding: 10px;
+        }
+
+        nav a:hover{
+            background:linear-gradient(to right,rgb(188, 188, 245),rgb(240, 156, 240));
+            color: rgb(65, 2, 56);
+        }
+
+       .search{
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About-us</a>
+            <a href="#">our-services</a>
+            <input type="search" placeholder="🔍search here" class="search">
+            <a href="#">Contact-us</a>
+        </nav>
+    </div>
+</body>
+</html>

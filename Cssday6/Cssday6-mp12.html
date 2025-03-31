@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-day6-9th mini project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        .background{
+            background: linear-gradient(135deg,green,rgb(186, 240, 154));
+            height: 700px;
+            width: 100vw;
+        }
+
+        .background1{
+            background-color: rgba(4, 77, 40, 0.151);
+            height: 600px;
+            width: 80vw;
+            position: relative;
+            margin: auto;
+            top: 50px;
+            border-radius: 10px;
+        }
+
+        header h3{
+            text-align: center;
+            font-size: 40px;
+            padding: 30px;
+            background-color: rgb(4, 117, 61);
+            border-radius: 10px;
+            color: rgb(170, 224, 202);
+            border-top:5px solid rgb(2, 65, 33);
+        }
+
+        .cards{
+            text-align: center;
+        }
+
+        .card1{
+            height: 380px;
+            width: 250px;
+            background-color: white;
+            display: inline-block;
+            margin-left: 40px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px green;
+            position: relative;
+            
+        }
+        .card1 header{
+            background-color: antiquewhite;
+            height:150px;
+            border-radius: 10px 10px 50px 50px;
+        }
+
+        .card1 h3{
+            position: relative;
+            top: 25px;
+            font-family: sans-serif;
+            color: green;
+        }
+
+        .card1 p{
+            position: relative;
+            top: 15px;
+            font-family: "Cookie", cursive;
+            font-size: 20px;
+            color: rgb(18, 88, 3);
+        }
+
+        .card1 button{
+            position: relative;
+            top: 20px;
+            height: 40px;
+            width: 150px;
+            border-radius: 100px;
+            border: none;
+            background: linear-gradient(135deg,rgb(6, 241, 6),green);
+            box-shadow: 10px 7px 10px grey;
+        }
+        .card1 button:hover{
+            background: linear-gradient(135deg,rgb(3, 95, 3),rgb(43, 231, 43));
+            box-shadow: 10px 7px 10px grey;
+            cursor: pointer; 
+        }
+
+        .card1:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 8px 20px rgba(168, 12, 12, 0.3); 
+            background: linear-gradient(135deg, #f87171, #fecaca);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="background">
+        <div class="background1">
+            <header>
+                <h3>Welcome to Our Restaurant</h3>
+            </header>
+            <main class="cards">
+                <div class="card1">
+                    <header>
+                        <img src="./assets/images/burger-removebg-preview.png" height="200px">
+                    </header>
+                    <main>
+                        <h3>HOT&SPICY CHICKEN BURGER</h3>
+                        <p>A juicy chicken patty layered with fresh veggies and creamy sauce in a bun 🍔</p>
+                        <button>Order Now !</button>
+                    </main>
+                </div>
+                <div class="card1">
+                    <header>
+                        <img src="./assets/images/pizza1-removebg-preview.png" height="200px">
+                    </header>
+                    <main>
+                        <h3>CHEESY-PERI PERI CHICKEN PIZZA</h3>
+                        <p>Crispy crust topped with spicy chicken, gooey cheese, and flavorful seasonings🍕</p>
+                        <button>Order Now !</button>
+                    </main>
+                </div>
+                <div class="card1">
+                    <header>
+                        <img src="./assets/images/panipoori-removebg-preview.png" height="200px">
+                    </header>
+                    <main>
+                        <h3>ALL FAVOURITS-SPICY PAANI POORI</h3>
+                        <p>Crispy hollow puris filled with tangy, spicy, and refreshing flavored water 🥙</p>
+                        <button>Order Now !</button>
+                    </main>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

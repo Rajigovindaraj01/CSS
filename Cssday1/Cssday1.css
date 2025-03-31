@@ -1,0 +1,130 @@
+/* //sampleminiproject css
+li::before{
+    content: "🌐";
+}
+
+*{
+    background-color: rgb(2, 2, 66);
+    color: white;
+    text-decoration: none;
+    list-style-type: none
+} */
+/* ------------------------------------------------------------------------------------------ */
+
+/* CSS 1: Use a universal selector to remove padding and margin for all  elements on a page.  */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* CSS 2: Style all <h2> tags with a font-size:24px and text color of blue  using a type selector.  */
+h2{
+    font-size: 24px;
+    color: blue;
+}
+/* CSS 3: Add a class (highlight) to a paragraph and style it with a yellow  background. */
+.highlight{
+background-color: yellow;
+}
+
+/* CSS 4: Create a button with id="cta" and style it with white text and a  green background.  */
+#cta{
+    color: white;
+    background-color: green;
+    height: 40px;
+    width: 60px;
+}
+
+#cta:hover{
+    background-color: yellowgreen;
+
+}
+
+/* <!-- CSS 6: Group selectors for <h1>, <h2>, and <h3> and style them with  bold text and the same color.     --> */
+.h1 , .h2 , .h3{
+    color:rgb(44, 182, 187);
+}
+
+/* <!-- CSS 7: Use a descendant selector to style all <p> tags inside a <div>. --> */
+
+div p {
+    color: azure;
+    background-color: rgb(238, 100, 238);
+}
+
+/* CSS 8: Use a child selector to style only direct child <li> elements inside  an unordered list (<ul>).  */
+ul > li {
+    color: azure;
+    background-color: rgb(87, 58, 114);
+    font-style: italic;
+    font-size: 30px;
+}
+
+/* <!-- CSS 9: Use an adjacent sibling selector to style the first <p> after an <h1>  with italic text.  --> */
+h1 + p {
+    font-style: italic;
+    color: rgb(119, 208, 219);
+}
+
+/* CSS 10: Add a hover effect to all buttons to change their background  color on hover. */
+.hover{
+    color: rgb(101, 6, 104);
+    background-color: rgb(233, 187, 233);
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.hover:hover{
+    background-color: rgb(92, 6, 85);
+    color: rgb(238, 176, 225);
+}
+
+/* <!-- CSS 11: Use nth-child(odd) to style odd-numbered rows in a table with a  gray background.  --> */
+
+ /* tbody tr:nth-child(odd){
+    background-color: rgb(212, 203, 203);
+}  */
+
+/* CSS 12: Use ::before to add a star symbol (★) before all <h1> headings.  */
+div h1::before{
+    content: "⭐";
+}
+
+/* CSS 13: Use ::after to add the word “Done” after a list item that has a  class of completed.  */
+li::after{
+    content: "✅ Done";
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+/* External CSS */
+.external-button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    height: 50px;
+            width: 200px;
+}
+
+.external-button:hover {
+    background-color: #accce6;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+.thead{
+    background-color: rgb(14, 14, 109);
+    color: white;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(218, 208, 208);
+}
+
+.id{
+    color: red;
+}
