@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY8-TASKS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Rochester&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        h1{
+            background: linear-gradient(135deg,rgb(204, 46, 164),purple);
+            padding: 20px;
+            margin: auto;
+            width: 90vw;
+            text-align: center;
+            border-radius: 10px;
+            color: rgb(238, 244, 248);
+            border: 8px solid rgb(46, 4, 35);
+            font-family: "Berkshire Swash", serif;
+            letter-spacing: 2px;
+            text-shadow: 8px 5px 10px black;
+        }
+
+
+
+        .task92{
+            width: 70vw;
+            height: 50vh;
+            border: 10px solid black;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            gap: 10px;
+            border-radius: 10px;
+            background: linear-gradient(135deg,red,rgb(168, 11, 103));
+        }
+        .task92-item1{
+            flex-grow: 2;
+            border: 5px solid rgb(252, 252, 253);
+            border-radius: 10px;
+        }
+        .task92-img{
+            height:100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .task92-item2{
+            flex-grow: 4;
+            border: 5px solid rgb(250, 247, 247);
+            border-radius: 10px;
+        }
+        .task92-item3{
+            flex-grow: 2;
+            border: 5px solid rgb(248, 246, 246);
+            border-radius: 10px;
+        }
+
+/* ---------------------------------------------------------------------------------------- */
+        .task93{
+            border: 5px solid rgb(32, 1, 1);
+            height: 50vh;
+            width: 90vw;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            gap: 20px;
+            justify-content: center;
+            background: linear-gradient(135deg,rgb(0, 255, 242),rgb(233, 115, 164));
+            border-radius: 20px;
+        }
+        .task93-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        .task93-item1{
+            flex-grow: 1;
+            border: 5px solid rgb(108, 58, 128);
+            border-radius: 20px;
+            flex-shrink: 0;
+        }
+        .task93-item2{
+            flex-grow: 4;
+            border: 5px solid rgb(108, 58, 128);
+            border-radius: 20px;
+            flex-shrink: 1;
+        }
+        .task93-item3{
+            flex-grow: 4;
+            border: 5px solid rgb(108, 58, 128);
+            border-radius: 20px;
+            flex-shrink: 1;
+        }
+        .task93-item4{
+            flex-grow: 1;
+            border: 5px solid rgb(108, 58, 128);
+            border-radius: 20px;
+            flex-shrink: 0;
+        }
+/* ---------------------------------------------------------------------------------------------------------- */
+        .task94{
+            border: 10px solid black;
+            height: 20vh;
+            width: 60vw;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 10px;
+        }
+        .task94-item1{
+            flex-basis: 200px;
+            border-radius: 10px;
+            background: linear-gradient(135deg,rgb(0, 255, 157) ,rgb(240, 250, 151));
+            box-shadow: 5px 5px 10px black;
+        }
+        .task94-item2{
+            flex-basis: 300px;
+            border-radius: 10px;
+            background: linear-gradient(135deg,rgb(0, 255, 157) ,rgb(240, 250, 151));
+            box-shadow: 5px 5px 10px black;
+        }
+        .task94-item3{
+            flex-basis: 400px;
+            border-radius: 10px;
+            background: linear-gradient(135deg,rgb(0, 255, 157) ,rgb(240, 250, 151));
+            box-shadow: 5px 5px 10px black;
+        }
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+        .task95{
+            border: 10px solid black;
+            height: 30vh;
+            width: 50vw;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            gap: 10px;
+            border-radius: 10px;
+        }
+        .task95-item1{
+            flex-grow: 1;
+            flex-shrink: 1;
+            order: 4;
+            background: linear-gradient(135deg,rgb(255, 115, 0) ,rgb(240, 250, 151));
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .task95-item2{
+            flex-grow: 1;
+            flex-shrink: 1;
+            order: 3;
+            background: linear-gradient(135deg,rgb(255, 115, 0) ,rgb(240, 250, 151));
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .task95-item3{
+            flex-grow: 1;
+            flex-shrink: 1;
+            order: 2;
+            background: linear-gradient(135deg,rgb(255, 115, 0) ,rgb(240, 250, 151));
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .task95-item4{
+            flex-grow: 1;
+            flex-shrink: 1;
+            order: 1;
+            background: linear-gradient(135deg,rgb(255, 115, 0) ,rgb(240, 250, 151));
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+        h2{
+            text-align: center;
+            position: relative;
+            top: 20px;
+            background: linear-gradient(135deg,rgb(138, 232, 248),white);
+            padding: 35px;
+            width: 100px;
+            margin: auto;
+            border-radius: 100px;
+            box-shadow: 5px 5px 10px black;
+        }
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+        .task96{
+            border: 2px solid black;
+            width: 60vw;
+            height: 50vh;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 15px;
+            background: linear-gradient(135deg,rgb(228, 4, 116),rgb(247, 9, 9));
+            border-radius: 20px;
+        }
+        .task96-item1{
+            flex-grow: 1;
+            flex-basis: 100px;
+            flex-shrink: 1;
+            border: 5px solid rgb(59, 58, 58);
+            align-self: flex-start;
+            height: 30vh;
+            border-radius: 0px 100px 0px 100px;
+            background: linear-gradient(135deg,rgb(248, 219, 138),rgb(68, 67, 67));
+        }
+        .task96-item2{
+            flex-grow: 1;
+            flex-basis: 100px;
+            flex-shrink: 1;
+            border: 5px solid rgb(77, 75, 75);
+            align-self: center;
+            height: 30vh;
+            border-radius: 0px 100px 0px 100px;
+            background: linear-gradient(135deg,rgb(248, 219, 138),rgb(68, 67, 67));
+        }
+        .task96-item3{
+            flex-grow: 1;
+            flex-basis: 100px;
+            flex-shrink: 1;
+            border: 5px solid rgb(59, 58, 58);
+            align-self: flex-end;
+            height: 30vh;
+            border-radius: 0px 100px 0px 100px;
+            background: linear-gradient(135deg,rgb(248, 219, 138),rgb(68, 67, 67));
+        }
+        .task96-img{
+            height: 100%;
+            width: 100%;
+        }
+/* ---------------------------------------------------------------------------------------------------------------------- */
+        .container1{
+            height: 50vh;
+            width: 60vw;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 20px;
+            background: linear-gradient(135deg,blue,red);
+            border-radius: 10px;
+        }
+        .container1-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .container1-item1{
+            align-self: center;
+            height: 40vh;
+            flex-basis: 200px;
+        }
+        .container1-item2{
+            align-self: center;
+            height: 40vh;
+            flex-basis: 200px;
+        }
+        .container2{
+            height: 35vh;
+            width: 20vw;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 10px;
+            text-align: center;
+            border-radius: 20px;
+            background-color: rgba(233, 206, 206, 0.5);
+        }
+        .container2 p{
+            text-align: center;
+            font-family: "Berkshire Swash", serif;
+            font-size: 20px;
+        }
+        .container2-item1{
+            flex-basis: 100px;
+            height: 10vh;
+            border: 2px solid red;
+            background: linear-gradient(135deg,rgb(241, 161, 174),rgb(208, 243, 243));
+            font-family: "Rochester", cursive;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .container2-item2{
+            flex-basis: 100px;
+            height: 10vh;
+            border: 2px solid red;
+            background: linear-gradient(135deg,rgb(241, 161, 174),rgb(208, 243, 243));
+            font-family: "Rochester", cursive;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .container2-item3{
+            flex-basis: 100px;
+            height: 10vh;
+            border: 2px solid red;
+            background: linear-gradient(135deg,rgb(241, 161, 174),rgb(208, 243, 243));
+            font-family: "Rochester", cursive;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
+        .task98back{
+            background-image: url(./assets/Images/back-nav.jpg);
+            height: 60vh;
+            width: 50vw;
+            background-size: cover;
+            margin: auto;
+            border-radius: 10px;
+        }
+        .task98{
+            display: flex;
+            flex-direction: row;
+            padding: 40px;
+        }
+        .task98 a{
+            gap: 10px;
+            padding: 10px;
+            flex-grow: 1;
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+        .task98 a:hover{
+            background: linear-gradient(to right,rgb(206, 84, 104),rgb(245, 224, 224));
+            cursor: pointer;
+        }
+        .search{
+            flex-grow: 2;
+            flex-shrink: 1;
+            height: 5vh;
+        }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+        .task99{
+            border: 5px solid black;
+            height: 40vh;
+            width: 80vw;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            gap: 20px;
+            background: linear-gradient(135deg,blue , red);
+        }
+        .task99-item1{
+            flex-grow: 1;
+            height: 35vh;
+        }
+        .task99-item2{
+            flex-grow: 3;
+            height: 35vh;
+        }
+        .task99-item3{
+           flex-grow: 1; 
+           height: 35vh;
+        }
+        .task99 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+/* ----------------------------------------------------------------------------------------------------------- */
+        .task100{
+            height: 50vh;
+            width: 50vw;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+            justify-content: center;
+            background: linear-gradient(135deg,rgb(230, 245, 174),rgb(245, 243, 143));
+        }
+        .task100-item1{
+            height: 10vh;
+            width: 10vw;
+            box-shadow: 5px 5px 10px black;
+            flex-basis: 200px;
+            background: linear-gradient(135deg,rgb(202, 233, 89),rgb(245, 243, 143));
+        }
+        .task100-item2{
+            height: 10vh;
+            width: 10vw;
+            box-shadow: 5px 5px 10px black;
+            flex-basis: 200px;
+            background: linear-gradient(135deg,rgb(202, 233, 89),rgb(245, 243, 143));
+        }
+        .task100-item3{
+            height: 10vh;
+            width: 10vw;
+            box-shadow: 5px 5px 10px black;
+            flex-basis: 200px;
+            background: linear-gradient(135deg,rgb(202, 233, 89),rgb(245, 243, 143));
+        }
+        .task100-item4{
+            height: 10vh;
+            width: 10vw;
+            box-shadow: 5px 5px 10px black;
+            flex-basis: 200px;
+            background: linear-gradient(135deg,rgb(202, 233, 89),rgb(245, 243, 143));
+        }
+        .task100-item5{
+            height: 10vh;
+            width: 10vw;
+            box-shadow: 5px 5px 10px black;
+            flex-basis: 200px;
+            background: linear-gradient(135deg,rgb(202, 233, 89),rgb(245, 243, 143));
+        }
+        .task100-item6{
+            height: 10vh;
+            width: 10vw;
+            box-shadow: 5px 5px 10px black;
+            flex-basis: 200px;
+            background: linear-gradient(135deg,rgb(202, 233, 89),rgb(245, 243, 143));
+        }
+        .task100-item7{
+            height: 10vh;
+            width: 10vw;
+            box-shadow: 5px 5px 10px black;
+            flex-basis: 200px;
+            background: linear-gradient(135deg,rgb(202, 233, 89),rgb(245, 243, 143));
+        }
+        .task100-item8{
+            height: 10vh;
+            width: 10vw;
+            box-shadow: 5px 5px 10px black;
+            flex-basis: 200px;
+            background: linear-gradient(135deg,rgb(202, 233, 89),rgb(245, 243, 143));
+        }
+        .task100-item9{
+            height: 10vh;
+            width: 10vw;
+            box-shadow: 5px 5px 10px black;
+            flex-basis: 200px;
+            background: linear-gradient(135deg,rgb(202, 233, 89),rgb(245, 243, 143));
+        }
+        .task100-item10{
+            height: 10vh;
+            width: 10vw;
+            flex-basis: 200px;
+            background: linear-gradient(135deg,rgb(202, 233, 89),rgb(245, 243, 143));
+            box-shadow: 5px 5px 10px black;
+        }
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+        .task102{
+            background: linear-gradient(135deg,pink,white);
+            height: 30vh;
+            width: 90vw;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            box-shadow: 5px 5px 10px black;
+        }
+        .task102-item1{
+            flex-basis: 300px;
+            flex-grow: 3;
+            flex-shrink: 1;
+            height: 20vh;
+            box-shadow: 5px 5px 10px black;
+            background: linear-gradient(135deg,pink,white);
+        }
+        .task102-item2{
+            flex-basis: 120px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            height: 15vh;
+            box-shadow: 5px 5px 10px black;
+            align-self: center;
+            background: linear-gradient(135deg,pink,white);
+        }
+        .task102-item3{
+            flex-basis: 300px;
+            flex-grow: 1;
+            flex-shrink: 0;
+            height: 20vh;
+            box-shadow: 5px 5px 10px black;
+            background: linear-gradient(135deg,pink,white);
+        }
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+        .task103 {
+            display: flex;
+            flex-direction: column;
+            width: 20vw;
+            height: 60vh;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.911);
+            background-color: white;
+            margin: auto;
+            border-radius: 10px;
+            background:linear-gradient(135deg,rgb(243, 215, 162),white);
+        }
+
+        .card-header {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .burger{
+            height: 150px;
+        }
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            position: relative;
+            top: 20px;
+            text-align: center;
+            font-family: "Cookie", cursive;
+            
+        }
+
+        .card-content h3 {
+            margin: 10px 0;
+            font-size: 22px;
+            font-size: 40px;
+        }
+
+        .card-content p {
+            font-size: 20px;
+            color: #555;
+        }
+
+        .rating {
+            color: #af6d02;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #27ae60;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .order-button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            top: 20px;
+        }
+
+        .order-button:hover {
+            background-color: #c0392b;
+        }
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+        .gallery {
+            width: 60vw;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 20px;
+            background: linear-gradient(135deg,rgb(203, 243, 94),rgb(219, 219, 147));
+            border-radius: 10px;
+        }
+
+        .gallery-item {
+            flex-grow: 1 ;
+            flex-shrink: 1;
+            flex-basis: 250px;
+            max-width: 250px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .gallery-content {
+            padding: 15px;
+        }
+
+        .gallery-content h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .gallery-content p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌸Css-Day8-Tasks🌸</h1>
+<h3>Task-92</h3>
+<h5>CSS 92: Create a flex container with items that grow differently using flex-grow.</h5>
+    <div class="task92">
+        <div class="task92-item1">
+           <img src="./assets/Images/cartoon-cat-3d_853677-37052.avif" class="task92-img">
+        </div>
+        <div class="task92-item2">
+           <img src="./assets/Images/images (1).jpg" class="task92-img">
+        </div>
+        <div class="task92-item3">
+           <img src="./assets/Images/images.jpg" class="task92-img">
+        </div>
+    </div>
+    <br>
+    <hr>
+
+<h3>Task-93</h3>
+<h5>CSS 93: Use flex-shrink to prevent certain items from shrinking in a responsive layout.</h5>
+    <div class="task93">
+        <div class="task93-item1">
+            <img src="./assets/Images/download.jpg" class="task93-img">
+        </div>
+        <div class="task93-item2">
+            <img src="./assets/Images/veg2" class="task93-img">
+        </div>
+        <div class="task93-item3">
+            <img src="./assets/Images/veg3" class="task93-img">
+        </div>
+        <div class="task93-item4">
+            <img src="./assets/Images/veg4" class="task93-img">
+        </div>
+    </div>
+    <br>
+    <hr>
+
+<h3>Task-94</h3>
+<h5>CSS 94: Set a default width for a flex item using flex-basis.</h5><br>
+    <div class="task94">
+        <div class="task94-item1">
+           
+        </div>
+        <div class="task94-item2">
+            
+        </div>
+        <div class="task94-item3">
+        
+        </div>
+    </div>
+    <br>
+    <hr>
+
+
+<h3>Task-95</h3>
+<h5>CSS 95: Reorder flex items using the order property</h5>
+    <div class="task95">
+        <div class="task95-item1">
+            <h2>1</h2>
+        </div>
+        <div class="task95-item2">
+            <h2>3</h2>
+        </div>
+        <div class="task95-item3">
+            <h2>2</h2>
+        </div>
+        <div class="task95-item4">
+            <h2>4</h2>
+        </div>
+    </div><br>
+    <hr>
+
+<h3>Task-96</h3>
+<h5>CSS 96: Align a single flex item to the center using align-self.</h5>
+    <div  class="task96">
+        <div class="task96-item1">
+            <img src="./assets/Images/honey1-removebg-preview.png" class="task96-img">
+        </div>
+        <div class="task96-item2">
+            <img src="./assets/Images/honey2-removebg-preview.png" class="task96-img">
+        </div>
+        <div class="task96-item3">
+            <img src="./assets/Images/honey2-removebg-preview.png" class="task96-img">
+        </div>
+    </div>
+    <br>
+    <hr>
+
+<h3>Task-97</h3>
+<h5>CSS 97: Create a nested flexbox layout where the outer container is horizontal, and the inner container is vertical.</h5>
+    <div class="container1">
+        <div class="container1-item1">
+            <img src="./assets/Images/cake1.jpg">
+        </div>
+        <div class="container2">
+            <p>Menus</p>
+            <div class="container2-item1">
+                Chocolate Cakes
+            </div>
+            <div class="container2-item2">
+                Fresh Cream Cakes 
+            </div>
+            <div class="container2-item3">
+                Customized Cakes
+            </div>
+        </div>
+        <div class="container1-item2">
+            <img src="./assets/Images/cake2.jpg" height="200px">
+        </div>
+    </div>
+    <br>
+    <hr>
+
+
+<h3>Task-98</h3>
+<h5>CSS 98: Build a responsive navigation bar where one item takes up more space using flex-grow</h5><br>
+    <div class="task98back">
+        <div class="task98">
+        <nav>
+            <a>Home</a>
+            <a>Our-Services</a>
+            <a>About-us</a>
+            <input type="search" class="search" placeholder="🔎 Search Here">
+            <a>Contact-us</a>
+            <a>Profile</a>
+        </nav>
+    </div>
+    </div>
+    <br>
+    <hr>
+
+<h3>task-99</h3>
+<h5>CSS 99: Create a three-column layout where one column is twice the size of the others using flex-grow.</h5>
+    <div class="task99">
+        <div class="task99-item1">
+            <img src="./assets/Images/car11.jpg">
+        </div>
+        <div class="task99-item2">
+            <img src="./assets/Images/car2.jpg">
+        </div>
+        <div class="task99-item3">
+            <img src="./assets/Images/car3.jpg">
+        </div>
+    </div>
+    <br>
+    <hr>
+
+
+<h3>Task-100</h3>
+<h5>CSS 100: Apply flex-basis to create a grid of items with consistent starting sizes.</h5>
+    <div class="task100">
+        <div class="task100-item1">
+
+        </div>
+        <div class="task100-item2">
+
+        </div>
+        <div class="task100-item3">
+
+        </div>
+        <div class="task100-item4">
+
+        </div>
+        <div class="task100-item5">
+
+        </div>
+        <div class="task100-item6">
+
+        </div>
+        <div class="task100-item7">
+
+        </div>
+        <div class="task100-item8">
+
+        </div>
+        <div class="task100-item9">
+
+        </div>
+        <div class="task100-item10">
+
+        </div>
+    </div>
+    <br>
+    <hr>
+
+
+<h3>Task-101</h3>
+<h5>CSS 101: Use align-self to align specific items differently in a flex container.</h5>
+<!-- already same one i did in the task96 so i use that here -->
+    <div  class="task96">
+        <div class="task96-item1">
+            <img src="./assets/Images/honey1-removebg-preview.png" class="task96-img">
+        </div>
+        <div class="task96-item2">
+            <img src="./assets/Images/honey2-removebg-preview.png" class="task96-img">
+        </div>
+        <div class="task96-item3">
+            <img src="./assets/Images/honey2-removebg-preview.png" class="task96-img">
+        </div>
+    </div>
+    <br>
+    <hr>
+
+
+<h3>Task-102</h3>
+<h5>CSS 102: Combine flex-grow, flex-shrink, and flex-basis in a single flex shorthand property.</h5>
+<div class="task102">
+    <div class="task102-item1">
+
+    </div>
+    <div class="task102-item2">
+
+    </div>
+    <div class="task102-item3">
+
+    </div>
+</div>
+    <hr>
+
+
+<h3>Task-103</h3>
+<h5>CSS 103: Create a card layout with an image, content, and footer using nested flex containers.</h5><br><br><br>
+    <div class="task103">
+    <div class="card-header">
+        <img src="./assets/Images/burger-removebg-preview (1).png" class="burger">
+    </div>
+    <div class="card-content">
+        <h3>Cheese Burger</h3>
+        <p>A juicy beef patty with melted cheese, fresh lettuce, and a toasted bun🍔.</p>
+        <div class="rating">⭐ 4.5/5</div>
+        <div class="price">₹499  <del style="color: #6b6969;">₹699</del></div>
+    </div>
+    <div class="card-footer">
+        <button class="order-button">Order Now</button>
+    </div>
+    </div>
+    <br>
+    <hr>
+
+<h3>Task-104</h3>
+<h5>CSS 104: Design a responsive gallery where items wrap to new rows using flex-wrap.</h5>
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="./assets/Images/img1.jpg" alt="Image 1">
+        <div class="gallery-content">
+            <h3>Nature View</h3>
+            <p>Beautiful scenery with mountains and trees.</p>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="./assets/Images/lights.jpg" alt="Image 2">
+        <div class="gallery-content">
+            <h3>City Lights</h3>
+            <p>Night view of a bustling city.</p>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="./assets/Images/img3.jpg" alt="Image 3">
+        <div class="gallery-content">
+            <h3>Beach Sunset</h3>
+            <p>Relaxing sunset by the ocean.</p>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="./assets/Images/img4.jpg" alt="Image 4">
+        <div class="gallery-content">
+            <h3>Forest Path</h3>
+            <p>A peaceful walk through the forest.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY8-MINIPROJECT15</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Rochester&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .background{
+            height: 100vh;
+            width: 100vw;
+            background-image: url(./assets/Images/icecream-back.webp);
+            background-size: cover;
+            margin: auto;
+        }
+        .background1{
+            height: 90vh;
+            width: 85vw;
+            background-color: rgba(129, 82, 20, 0.726);
+            margin: auto;
+            position: relative;
+            top: 30px;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            flex-grow: 1;
+            flex-shrink:  1;
+            flex-basis:  300px;
+            margin-top: 50px;
+            max-width: 300px;
+            background: linear-gradient(135deg,rgb(107, 12, 12),white);
+            border-radius: 10px;
+            height: 60vh;
+            width: 10vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            bottom: 80px;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: auto;
+            position: relative;
+            bottom: 80px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .card-content p {
+            font-size: 25px;
+            color: #640606;
+            position: relative;
+            bottom: 70px;
+            text-align: center;
+            font-family: "Cookie", cursive;
+        }
+
+        .card button {
+            background:linear-gradient(135deg,rgb(245, 89, 89),rgb(114, 9, 9));
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: auto;
+            position: relative;
+            left: 80px;
+            bottom: 50px;
+            font-size: 20px;
+        }
+
+        .card button:hover {
+            background:linear-gradient(135deg,rgb(114, 9, 9),rgb(245, 89, 89));
+        }
+        h1{
+            text-align: center;
+            background-color: rgba(240, 232, 232, 0.664);
+            padding: 30px;
+            font-family: "Berkshire Swash", serif;
+            font-size: 40px;
+            text-shadow: 5px 5px 10px brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="background1">
+            <h1>Ice-Cream Menu</h1>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/Images/ice-cream1-removebg-preview.png" alt="Card 1">
+                    <div class="card-content">
+                        <h3>3 Flavours combo</h3>
+                        <p>Combo of flavoures pista , blue-berry and chocolate plate.</p>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/Images/ice2-removebg-preview.png" alt="Card 2">
+                    <div class="card-content">
+                        <h3>Strawberry-Vanilla </h3>
+                        <p>strawberry and vanilla mixed ice-cream with crispy cone.</p>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/Images/ice3-removebg-preview.png" alt="Card 3">
+                    <div class="card-content">
+                        <h3>Blue-berry Bowl</h3>
+                        <p>Refreshing ice cream with delicious fresh Blueberries.</p>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

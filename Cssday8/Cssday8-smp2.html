@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY8-SAMPLE MINI PROJECT2</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .feature-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .feature-box {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Individual flex-grow for each box */
+        .feature-food {
+            flex-grow: 1;
+        }
+
+        .feature-delivery {
+            flex-grow: 2; /* Takes more space */
+        }
+
+        .feature-payment {
+            flex-grow: 1;
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            color: #007BFF;
+            align-self: center;
+        }
+
+        .feature-title {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+
+        .feature-text {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .images{
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="feature-section">
+        <div class="feature-box feature-food">
+            <img src="./assets/Images/smp1.jpg" class="images">
+            <h3 class="feature-title">Delicious Food</h3>
+            <p class="feature-text">Tasty and freshly made meals delivered to your doorstep.</p>
+        </div>
+        <div class="feature-box feature-delivery">
+            <img src="./assets/Images/smp2.jpg" class="images">
+            <h3 class="feature-title">Fast Delivery</h3>
+            <p class="feature-text">Lightning-fast delivery with real-time tracking.</p>
+        </div>
+        <div class="feature-box feature-payment">
+            <img src="./assets/Images/smp3.jpg" class="images">
+            <h3 class="feature-title">Secure Payments</h3>
+            <p class="feature-text">Safe and secure transactions with multiple payment options.</p>
+        </div>
+    </div>
+</body>
+</html>
