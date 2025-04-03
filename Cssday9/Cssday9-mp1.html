@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY9-MINIPROJECT1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Pacifico&family=Rochester&family=Sacramento&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .background{
+            background: linear-gradient(135deg,rgb(183, 0, 255),rgb(236, 86, 111));
+            height: 100vh;
+            background-image: url(./Assets/Images/back.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            height: 90vh;
+            width: 90vw;
+            margin: auto;
+            position: relative;
+            top: 50px;
+        }
+        .container1{
+            background-color: rgba(218, 204, 14, 0.664);
+            border-radius: 20px 0px 0px 20px;
+        }
+        .container1 h1{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin: auto;
+            position: relative;
+            top: 200px;
+            color: aliceblue;
+            font-family: "Berkshire Swash", serif;
+            font-size: 40px;
+            text-shadow: 5px 5px 10px black;
+        }
+        .image{
+            position: relative;
+            margin-top: 150px;
+            left: 150px;
+        }
+        .container2{
+            border: 5px solid black;
+            gap: 10px;
+
+        }
+        .col1{
+            border: 5px solid black;
+            grid-template-columns: 1fr 3fr 1fr ;
+            display: grid;
+            height: 30vh;
+        }
+        .item1{
+            border: 5px solid black;
+            height: 30vh;
+        }
+        .item2{
+            border: 5px solid black; 
+            height: 30vh;
+        }
+        .item3{
+            border: 5px solid black;
+            height: 30vh;
+        }
+        .col1-item3-1{
+            height: 15vh;
+            border: 5px solid black;
+        }
+        .col1-item3-2{
+            height: 15vh;
+            border: 5px solid black;
+        }
+        .col1-item1-1{
+            height: 15vh;
+            border: 5px solid black;
+        }
+        .col1-item1-2{
+            height: 15vh;
+            border: 5px solid black;
+        }
+
+        .col2{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            border: 5px solid rgb(7, 6, 6);
+            width: 100%;
+            height: 30vh;
+        }
+        .col2-item1{
+            border: 5px solid black;
+            height: 30vh;
+        }
+        .col2-item2{
+            border: 5px solid black;
+            height: 30vh;
+        }
+
+        .col3{
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            height: 29vh;
+        }
+        .col3-item1{
+            border: 5px solid black;
+            height: 29vh;
+        }
+        .col3-item2{
+            border: 5px solid black;
+            height: 29vh;
+        }
+        .col3-item3{
+            border: 5px solid black;
+            height: 29vh;
+        }
+        .images1{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .images1:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+    <div class="container">
+        <div class="container1">
+            <h1>
+                Cute-Rabbits Gallery
+            </h1>
+            <img src="./Assets/Images/rab2-removebg-preview.png" class="image">
+        </div>
+        <div class="container2">
+            <div class="col1">
+                <div class="item1">
+                    <div class="col1-item1-1">
+                        <img src="./Assets/Images/rab1.jpg" class="images1">
+                    </div>
+                    <div class="col1-item1-2">
+                        <img src="./Assets/Images/rab2.jpg" class="images1">
+                    </div>
+                </div>
+                <div class="item2">
+                    <img src="./Assets/Images/rab5.jpg" class="images1">
+                </div>
+                <div class="item3">
+                    <div class="col1-item3-1">
+                        <img src="./Assets/Images/rab3.jpg" class="images1">
+                    </div>
+                    <div class="col1-item3-2">
+                        <img src="./Assets/Images/rab4.jpg" class="images1">
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="col2-item1">
+                    <img src="./Assets/Images/rab6.jpg" class="images1">
+                </div>
+                <div class="col2-item2">
+                    <img src="./Assets/Images/rab66.jpg" class="images1">
+                </div>
+            </div>
+            <div class="col3">
+                <div class="col3-item1">
+                    <img src="./Assets/Images/rab8.avif" class="images1">
+                </div>
+                <div class="col3-item2">
+                    <img src="./Assets/Images/rab9.jpg" class="images1">
+                </div>
+                <div class="col3-item3">
+                    <img src="./Assets/Images/rab10.jpg" class="images1">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

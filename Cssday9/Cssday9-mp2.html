@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY9-MINI PROJECT 2</title>
+</head>
+<style>
+    .background{
+        background: linear-gradient(135deg,pink,white);
+        height: 100vh;
+        width: 98vw;
+        margin: auto;
+    }
+    .container{
+        height: 90vh;
+        width: 80vw;
+        margin: auto;
+        background-color: rgb(245, 169, 241);
+        display: grid;
+        grid-template-columns: 2fr 6fr;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px rgb(156, 154, 154);
+        position: relative;
+        top: 30px;
+    }
+    .container1{
+       width: 15vw;
+       background-color: whitesmoke;
+       border-radius: 10px;
+       box-shadow: 5px 5px 5px rgb(156, 154, 154);
+    }
+    .container2{
+        height: 20vh;
+    }
+    
+    .menus{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 20px 20px 20px 20px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .menu1{
+        padding: 15px;
+    }
+    .menu1:hover{
+        background-color: rgb(245, 170, 239);
+        cursor: pointer;
+    }
+    .container2{
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 2fr;
+        height: 20vh;
+    }
+    .search{
+        height: 50px;
+        border: none;
+        background-color: rgb(248, 246, 246);
+        border-radius: 10px;
+        position: relative;
+        left: 10px;
+        top: 10px;
+    }
+    .button1{
+        position: relative;
+        left: 10px;
+        top: 10px;
+        height: 50px;
+        border: none;
+        width: 100px;
+        border-radius: 10px;
+        background: linear-gradient(135deg,rgb(235, 121, 121),pink);
+        color: white;
+    }
+    .button2{
+        position: relative;
+        left: 10px;
+        top: 10px;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(135deg,rgb(233, 45, 45),pink);
+        color: white;
+    }
+    .button1:hover{
+        background: linear-gradient(135deg,rgb(255, 189, 216),rgb(202, 49, 75));
+    }
+    .button2:hover{
+        background: linear-gradient(135deg,rgb(255, 189, 216),rgb(202, 49, 75));
+    }
+    .images{
+        height: 150px;
+    }
+    .header {
+            background-color: #ff6600;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Main Content */
+
+        .main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Card */
+        .card {
+            width: 320px;
+            background: linear-gradient(135deg,rgba(248, 236, 236, 0.342),rgb(240, 200, 207));
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 5px 5px 10px rgba(15, 13, 13, 0.2);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .headimg{
+            background: linear-gradient(135deg,red,pink);
+            height: 30vh;
+            border-radius: 0px 0px 200px 0px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .briyani{
+            height: 35vh;
+        }
+
+        .card-content {
+            padding: 15px;
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        .rating {
+            font-size: 16px;
+            color: #f39c12;
+            margin: 5px 0;
+        }
+
+        .order-btn {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .order-btn:hover {
+            background-color: #cc5500;
+        }
+        .cont{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+</style>
+<body>
+    <div class="background">
+    <div class="container">
+        <div class="container1">
+            <div class="menus">
+                <img src="./Assets/Images/restaurant-logo-design-template-5a88f6fd171d938011f3d7ccbaf40bfe_screen-removebg-preview.png" class="images">
+                <div class="menu1">🍽️Restaurants</div>
+                <div class="menu1">🏢Branches</div>
+                <div class="menu1"> 𓊯 Tables</div>
+                <div class="menu1">📅Reserve a Table</div>
+                <div class="menu1">👤Users</div>
+            </div>
+        </div>
+        <div class="container2">
+            <div>
+                <input type="search" placeholder="Search 🍽️Restaurants" class="search">
+            </div>
+            <div>
+                <input type="search"placeholder="Search 🏢Branches" class="search">
+            </div>
+            <div>
+                <button class="button1">Submit</button>
+            </div>
+            <div>
+                <button class="button2">➕Add Reservation</button>
+            </div> 
+            
+            <div>
+                <div class="main">
+                    <div class="card">
+                        <div class="headimg">
+                            <img src="./assets/Images/69e27a20c5bd507e0d9c09f0c2e536b5-removebg-preview.png" alt="Biryani" class="briyani">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">Delicious Chicken Biryani</div>
+                            <div class="card-description">Aromatic and flavorful biryani with tender chicken pieces, served hot.</div>
+                            <div class="price">₹249</div>
+                            <div class="rating">⭐⭐⭐⭐☆</div>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

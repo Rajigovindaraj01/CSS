@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff9a9e, #300b01);
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background: linear-gradient(to right, #4facfe, #00fea9);
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .pricing-table {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .plan {
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s;
+            color: white;
+        }
+
+        .plan:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .plan h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .features li:last-child {
+            border-bottom: none;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background: #fff;
+            color: #ff5e62;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff5e62;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>Our Pricing Plans</header>
+
+    <div class="pricing-table">
+        <div class="plan">
+            <h2>Basic</h2>
+            <div class="price">₹2000/month</div>
+            <ul class="features">
+                <li>✔ 10GB Storage</li>
+                <li>✔ 1 User</li>
+                <li>✔ Email Support</li>
+            </ul>
+            <a href="#" class="btn">Choose Plan</a>
+        </div>
+
+        <div class="plan">
+            <h2>Standard</h2>
+            <div class="price">₹2499/month</div>
+            <ul class="features">
+                <li>✔ 50GB Storage</li>
+                <li>✔ 5 Users</li>
+                <li>✔ Priority Support</li>
+            </ul>
+            <a href="#" class="btn">Choose Plan</a>
+        </div>
+
+        <div class="plan">
+            <h2>Premium</h2>
+            <div class="price">₹2999/month</div>
+            <ul class="features">
+                <li>✔ 100GB Storage</li>
+                <li>✔ Unlimited Users</li>
+                <li>✔ 24/7 Support</li>
+            </ul>
+            <a href="#" class="btn">Choose Plan</a>
+        </div>
+    </div>
+
+    <footer>&copy; 2025 Pricing Table. All Rights Reserved.</footer>
+
+</body>
+</html>

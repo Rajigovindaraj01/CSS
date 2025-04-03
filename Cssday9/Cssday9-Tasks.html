@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY9-TASKS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Pacifico&family=Rochester&family=Sacramento&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        h1{
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg,rgb(203, 118, 224),rgb(173, 250, 244)); 
+            text-shadow: 5px 5px 10px rgb(109, 101, 101);
+            font-family: "Berkshire Swash", serif;
+            width: 95vw;
+            margin: auto;
+            box-shadow: 5px 5px 10px black;
+            
+        }
+        .task105{
+            width: 50vw;
+            height: 65vh;
+            margin: auto;
+            display: grid;
+            grid-template-columns:1fr 2fr 1fr;
+            gap: 10px;
+            justify-content: center;
+            padding: 10px;
+            grid-template-rows: 80px 80px 80px 80px;
+            background: linear-gradient(135deg,rgb(4, 207, 163),rgb(86, 95, 3));
+        }
+        .task105-item1{
+            box-shadow: 5px 5px 10px black;
+            background: linear-gradient(135deg,rgb(4, 207, 163),rgb(222, 245, 20));
+        }
+        .task105-item2{
+            box-shadow: 5px 5px 10px black;
+            background: linear-gradient(135deg,rgb(4, 207, 163),rgb(222, 245, 20));
+        }
+        .task105-item3{
+            box-shadow: 5px 5px 10px black;
+            background: linear-gradient(135deg,rgb(4, 207, 163),rgb(222, 245, 20));
+        }
+        .task105-item4{
+            box-shadow: 5px 5px 10px black;
+            background: linear-gradient(135deg,rgb(4, 207, 163),rgb(222, 245, 20));
+        }
+        .task105-item5{
+            box-shadow: 5px 5px 10px black;
+            background: linear-gradient(135deg,rgb(4, 207, 163),rgb(222, 245, 20));
+        }
+        .task105-item6{
+            box-shadow: 5px 5px 10px black;
+            background: linear-gradient(135deg,rgb(4, 207, 163),rgb(222, 245, 20));
+        }
+        .task105-item7{
+            box-shadow: 5px 5px 10px black;
+            background: linear-gradient(135deg,rgb(4, 207, 163),rgb(222, 245, 20));
+        }
+        .task105-item8{
+            box-shadow: 5px 5px 10px black;
+            background: linear-gradient(135deg,rgb(4, 207, 163),rgb(222, 245, 20));
+        }
+        .task105-item9{
+            box-shadow: 5px 5px 10px black;
+            background: linear-gradient(135deg,rgb(4, 207, 163),rgb(222, 245, 20));
+        }
+        .task105-item10{
+            box-shadow: 5px 5px 10px black;
+            background: linear-gradient(135deg,rgb(4, 207, 163),rgb(222, 245, 20));
+        }
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+        .task106{
+            height: 30vh;
+            width: 60vw;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding: 10px;
+            background: linear-gradient(135deg,pink,rgb(236, 11, 169));
+        }
+        .task106 div{
+            background: linear-gradient(135deg,pink,rgb(181, 94, 192));
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px black;
+        }
+        .task106 img{
+            height: 25vh;
+            position: relative;
+            left: 50px;
+        }
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+        .task107{
+            width: 40vw;
+            height: 90vh;
+            margin: auto;
+            display: grid;
+            grid-template-rows:100px 200px auto ;
+            gap: 10px;
+            padding: 10px;
+        }
+        .task107 div{
+            border-radius: 20px;
+            background: linear-gradient(135deg,rgb(8, 243, 231),rgb(4, 177, 96));
+            box-shadow: 10px 10px 10px rgb(7, 16, 17);
+        }
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+        .task108{
+            height: 40vh;
+            width: 65vw;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 200px 200px 200px 200px;
+            gap: 10px;
+            padding: 10px;
+        }
+        .task108 div{
+            box-shadow: 5px 5px 10px black;
+            background: linear-gradient(135deg,rgb(217, 150, 223),rgb(148, 3, 100));
+        }
+        .task108 img{
+            height: 100%;
+        }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+        .task109{
+            margin: auto;
+            width: 80vw;
+            height: 20vh;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 10px;
+            padding:10px
+        }
+        .task109 div{
+            background: linear-gradient(135deg,rgb(77, 2, 14),rgb(241, 21, 21));
+            box-shadow: 5px 5px 10px black;
+        }
+        .task109 div:nth-child(even){
+            background: linear-gradient(135deg,rgb(202, 28, 57),rgb(253, 196, 196));
+        }
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+        .task110{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 16px;
+            padding: 16px;
+            width: 90vw;
+            margin: auto;
+        }
+        .items {
+        background: linear-gradient(135deg,yellow,rgb(35, 226, 178));
+        color: white;
+        padding: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 5px 5px 10px black;
+        }
+        .items:hover{
+            transform: scale(1.05);
+        }
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+        .task111{
+            width: 90vw;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+            gap: 50px;
+            padding: 10px;
+            margin: auto;
+        }
+        .card{
+            background-color: rgb(248, 250, 252);
+            height: 50vh;
+            width: 15vw;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px black;
+        }
+        .task111 header{
+            background:linear-gradient(135deg,rgb(252, 252, 174),rgb(253, 253, 47));
+            height: 30vh;
+            width: 15vw;
+            margin: auto;
+            border-radius: 10px 10px 100px 100px;
+        }
+        .card1{
+            box-shadow: 5px 5px 10px black;
+            border-radius: 10px;
+            background-color: rgb(244, 246, 248);
+            height: 250px;
+            width: 150px;
+            position: relative;
+            bottom: 150px;
+            left: 25px;
+        }
+        .number{
+            height: 11vh;
+            width: 5vw;
+            background-color: rgb(252, 240, 74);
+            border-radius: 200px;
+            position: relative;
+            bottom: 20px;
+            border: 5px solid rgb(253, 253, 252);
+            box-shadow:5px 5px 10px black ;
+            left: 40px;
+        }
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+        .task112{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+            grid-template-rows: auto;
+            margin: auto;
+            width: 90vw;
+            height: auto;
+            gap: 20px;
+            background: linear-gradient(135deg,pink,red);
+            border-radius: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .photos img{
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px black;
+        }
+        .photos:hover{
+            transform: scale(1.12);
+            cursor: pointer;
+        }
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+        .task113 {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; /* Dynamic column sizes */
+        gap: 16px;
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+        }
+
+        .grid-item{
+            background:linear-gradient(135deg,rgb(7, 243, 231),orange);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 5px 4px 8px rgba(29, 12, 12, 0.699);
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+        }
+        .grid-item:hover{
+            transform: scale(1.1);
+        }
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+    .task114{
+        display: grid;
+        grid-template-rows: 80px 1fr 60px; /* Header (80px), Content (Auto), Footer (60px) */
+        height: auto;
+        width: 80vw;
+        margin: auto;
+        border: 5px solid black;
+    }
+    .task114-header{
+        background-color: #222;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+    .task114-content{
+        background: linear-gradient(135deg,pink , rgb(255, 255, 177));
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+    }
+    .task114-footer{
+        background-color: #222;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }
+    .imageshoney{
+        height: 200px auto;
+        width: 300px auto;
+    }
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    .task116{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive */
+    gap: 16px;
+    padding: 20px;
+    width: 90vw;
+    margin: auto;
+    background: linear-gradient(to right , red,blue);
+    border-radius: 30px
+    }
+    .grids{
+    background-color: rgba(241, 218, 218, 0.425);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    }
+    .grids:hover{
+        transform: scale(1.1);
+    }
+    
+    .task117{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive */
+    gap: 16px;
+    padding: 20px;
+    width: 90vw;
+    margin: auto;
+    background: linear-gradient(to right , red,rgb(156, 243, 195));
+    border-radius: 30px
+    }
+    .gridss{
+    background-color: rgba(241, 218, 218, 0.425);
+    border: 5px solid pink;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.685);
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    }
+    .gridss:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <h1>Css-Day9-Tasks</h1><br>
+<h3>TASK-105</h3>
+<h5>CSS 105: Create a grid-container with display: grid.</h5>
+     <div class="task105">
+        <div class="task105-item1"></div>
+        <div class="task105-item2"></div>
+        <div class="task105-item3"></div>
+        <div class="task105-item4"></div>
+        <div class="task105-item5"></div>
+        <div class="task105-item6"></div>
+        <div class="task105-item7"></div>
+        <div class="task105-item8"></div>
+        <div class="task105-item9"></div>
+        <div class="task105-item10"></div>
+     </div>
+     <br>
+     <hr>
+
+<h3>TASK-106</h3>
+<h5>CSS 106: Define three equal-width columns using grid-templatecolumns: repeat(3, 1fr).</h5>
+    <div class="task106">
+        <div>
+            <img src="./Assets/Images/car1-removebg-preview.png">
+        </div>
+        <div>
+            <img src="./Assets/Images/dog2-removebg-preview.png">
+        </div>
+        <div>
+            <img src="./Assets/Images/dog3-removebg-preview.png">
+        </div>
+    </div>
+    <br>
+    <hr>
+
+<h3>TASK-107</h3>
+<h5>CSS 107: Create a grid with fixed row heights using grid-template-rows:100px 200px auto.</h5>
+    <div class="task107">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <br>
+    <hr>
+
+<h3>TASK-108</h3>
+<h5>CSS 108: Add spacing between grid items using gap: 10px</h5>
+    <div class="task108">
+        <div>
+            <img src="./Assets/Images/panda1-removebg-preview.png">
+        </div>
+        <div>
+            <img src="./Assets/Images/panda2-removebg-preview.png">
+        </div>
+        <div>
+            <img src="./Assets/Images/panda3-removebg-preview.png">
+        </div>
+        <div>
+            <img src="./Assets/Images/panda4-removebg-preview.png">
+        </div>
+    </div><br>
+    <hr>
+
+
+<h3>TASK-109</h3>
+<h5>CSS 109: Use grid-template-columns to create a layout with one wide column and two narrow columns (2fr 1fr 1fr).</h5>
+    <div class="task109">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <br>
+    <hr>
+
+
+<h3>TASK-110</h3>
+<h5>CSS 110: Add a responsive layout using media queries to adjust the number of columns</h5>
+    <div class="task110">
+    <div class="items">1</div>
+    <div class="items">2</div>
+    <div class="items">3</div>
+    <div class="items">4</div>
+    <div class="items">5</div>
+    <div class="items">6</div>
+    <div class="items">7</div>
+    <div class="items">8</div>
+    </div>
+    <br>
+    <hr>
+
+
+<h3>TASK-111</h3>
+<h5>CSS 111: Build a grid of six cards with a uniform layout.</h5>
+    <div class="task111">
+        <div class="card">
+            <header>
+
+            </header>
+            <div  class="card1">
+                <div class="number">
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <header>
+
+            </header>
+            <div  class="card1">
+                <div class="number">
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <header>
+
+            </header>
+            <div  class="card1">
+                <div class="number">
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <header>
+
+            </header>
+            <div  class="card1">
+                <div class="number">
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <header>
+
+            </header>
+            <div  class="card1">
+                <div class="number">
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <header>
+
+            </header>
+            <div  class="card1">
+                <div class="number">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+
+<h3>TASK-112</h3>
+<h5>CSS 112: Create a photo gallery using grid-template-rows and gridtemplate-columns.</h5>
+    <div class="task112">
+        <div class="photos">
+            <img src="./Assets/Images/teddy1.jpg">
+        </div>
+        <div class="photos">
+            <img src="./Assets/Images/teddy2.jpg">
+        </div>
+        <div class="photos">
+            <img src="./Assets/Images/teddy7.jpg">
+        </div>
+        <div class="photos">
+            <img src="./Assets/Images/teddy4.jpg">
+        </div>
+        <div class="photos">
+            <img src="./Assets/Images/teddy8.jpg">
+        </div>
+        <div class="photos">
+            <img src="./Assets/Images/teddy6.jpg">
+        </div>
+    </div>
+    <br>
+    <hr>
+
+
+<h3>TASK-113</h3>
+<h5>CSS 113: Adjust grid column sizes dynamically using fr units</h5> 
+    <div class="task113">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    </div>
+
+
+
+<h3>TASK-114</h3>
+<h5>CSS 114: Apply different row heights for header, content, and footer using grid-template-rows.</h5>
+    <div class="task114">
+        <header class="task114-header">Welcome to my website</header>
+        <main class="task114-content">
+            <img src="./Assets/Images/honey-removebg-preview.png" class="imageshoney">
+        </main>
+        <footer class="task114-footer">All Rights Reserved</footer>
+    </div>
+    <br>
+    <hr>
+
+<h3>TASK-115</h3>
+<h5>CSS 115: Add a hover effect to grid items in a gallery.</h5>
+<div class="task112">
+    <div class="photos">
+        <img src="./Assets/Images/teddy1.jpg">
+    </div>
+    <div class="photos">
+        <img src="./Assets/Images/teddy2.jpg">
+    </div>
+    <div class="photos">
+        <img src="./Assets/Images/teddy7.jpg">
+    </div>
+    <div class="photos">
+        <img src="./Assets/Images/teddy4.jpg">
+    </div>
+    <div class="photos">
+        <img src="./Assets/Images/teddy8.jpg">
+    </div>
+    <div class="photos">
+        <img src="./Assets/Images/teddy6.jpg">
+    </div>
+</div>
+<br>
+<hr>
+
+
+<h3>TASK-116</h3>
+<h5>CSS 116: Use media queries to adjust a grid layout for mobile, tablet, and desktop views.</h5>
+                              
+   <div class="task116">
+       <div class="grids">1</div>
+       <div class="grids">2</div>
+       <div class="grids">3</div>
+       <div class="grids">4</div>
+       <div class="grids">5</div>
+       <div class="grids">6</div>
+    </div>
+    <br>
+    <hr>
+
+<h3>TASK-117</h3>
+<h5>CSS 117: Combine gap and border for visually separated grid items.</h5>
+<div class="task117">
+    <div class="gridss">1</div>
+    <div class="gridss">2</div>
+    <div class="gridss">3</div>
+    <div class="gridss">4</div>
+    <div class="gridss">5</div>
+    <div class="gridss">6</div>
+ </div>
+</body>
+</html>
