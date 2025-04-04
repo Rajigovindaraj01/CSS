@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "main sidebar";
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        header {
+            grid-area: header;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        main {
+            grid-area: main;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background: #ddd;
+            padding: 20px;
+        }
+
+        article {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 10vw;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>🌍My Travel Blog ✈️</header>
+    <main>
+        <article>
+            <h2>Paris, France 🇫🇷</h2>
+            <img src="./Assets/Images/paris.jpg" alt="Paris">
+            <p>Explore the city of love ❤️ with its stunning architecture and the iconic Eiffel Tower 🗼.</p>
+        </article>
+        <article>
+            <h2>Rome, Italy 🇮🇹</h2>
+            <img src="./Assets/Images/rome.jpg" alt="Rome">
+            <p>Visit the ancient ruins of the Colosseum 🏛️ and experience Italian culture 🍝.</p>
+        </article>
+        <article>
+            <h2>Kyoto, Japan 🇯🇵</h2>
+            <img src="./Assets/Images/kyoto.jpg" alt="Kyoto">
+            <p>Discover traditional temples ⛩️, cherry blossoms 🌸, and Japanese heritage.</p>
+        </article>
+        <article>
+            <h2>New York, USA 🇺🇸</h2>
+            <img src="./Assets/Images/newyork.jpg" alt="New York">
+            <p>Experience the vibrant city life 🏙️ with Times Square and Central Park 🌳.</p>
+        </article>
+        <article>
+            <h2>Bali, Indonesia 🇮🇩</h2>
+            <img src="./Assets/Images/bali.jpg" alt="Bali">
+            <p>Relax on tropical beaches 🏖️ and explore lush green rice terraces 🌾.</p>
+        </article>
+    </main>
+    <aside class="sidebar">
+        <h3>Sidebar 📝</h3>
+        <p>Additional content or links 🔗.</p>
+    </aside>
+</body>
+</html>

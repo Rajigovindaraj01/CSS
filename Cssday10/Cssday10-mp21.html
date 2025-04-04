@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY10-21 MINI PROJECT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Pacifico&family=Rochester&family=Sacramento&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .background{
+            background-image: url(./Assets/Images/honey-bee-wallpaper-border-1600x1000.jpg);
+            background-size:cover;
+            height: 100vh;
+            width: 99vw;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            padding: 30px;
+        }
+        .container1{
+            background-color: rgba(83, 69, 23, 0.733);
+            max-height:100vh;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        .container2{
+            background-color:rgba(250, 191, 12, 0.5);
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows:(3,1fr);
+            height: auto;
+            gap: 5px;
+            padding:10px;
+            overflow-y: auto;
+            max-height: 100vh;
+        }
+        .container2-item{
+            background-color: antiquewhite;
+            height: auto;
+            overflow: hidden;
+            border: 5px solid black;
+            box-shadow: 5px 5px 10px black;
+        }
+
+        .container2-item:hover{
+            transform: scale(1.1);
+        }
+
+        .item1{
+            grid-column: span 2;
+            
+        }
+        .item3{
+            grid-column: span 2;
+        }
+        .item4{
+            grid-column: span 3;
+        }
+        .item5{
+            border-radius: 200px;
+        }
+        .item6{
+            grid-row:  span 2;
+        }
+        .item8{
+            grid-column: span 3;
+        }
+        .item9{
+            grid-row: span 2;
+        }
+        .item10{
+            border-radius: 200px;
+        }
+        .item11{
+            grid-column: span 3;
+        }
+        .item16{
+            grid-column: span 5;
+        }
+        .images{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        h1{
+            text-align: center;
+            margin-top: 100px;
+            font-family: sans-serif;
+            text-shadow: 5px 5px 10px black;
+        }
+        h2{
+            text-align: center;
+            font-size: 40px;
+            color: rgb(255, 196, 0);
+            font-family: "Cookie", cursive;
+            text-shadow: 5px 5px 10px black;
+            letter-spacing: 5px;
+        }
+        .image1{
+            height: 40vh;
+            position: relative;
+            left: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="container1">
+            <h1>Welcome To My<br> <h2>🍯🐝Honey-Bee Gallery🐝🍯</h2></h1>
+            <img src="./Assets/Images/honey-removebg-preview.png" class="image1">
+        </div>
+        <div class="container2">
+            <div class="container2-item item1">
+                <img src="./Assets/Images/honey1 - Copy.jpg" class="images">
+            </div>
+            <div class="container2-item item2">
+                <img src="./Assets/Images/honey2.jpg" class="images">
+            </div>
+            <div class="container2-item item3">
+                <img src="./Assets/Images/honey3.jpg" class="images">
+            </div>
+            <div class="container2-item item4">
+                <img src="./Assets/Images/honey4.jpg" class="images">
+            </div>
+            <div class="container2-item item5">
+                <img src="./Assets/Images/honey5.jpg" class="images" style="border-radius: 300px;">
+            </div>
+            <div class="container2-item item6">
+                <img src="./Assets/Images/honey6.jpg" class="images">
+            </div>
+            <div class="container2-item item7">
+                <img src="./Assets/Images/honey7.jpg" class="images">
+            </div>
+            <div class="container2-item item8">
+                <img src="./Assets/Images/honey8.jpg" class="images">
+            </div>
+            <div class="container2-item item9">
+                <img src="./Assets/Images/honey9.jpg" class="images">
+            </div>
+            <div class="container2-item item10">
+                <img src="./Assets/Images/honey10.jpg" class="images" style="border-radius: 300px;">
+            </div>
+            <div class="container2-item item11">
+                <img src="./Assets/Images/honey11.webp" class="images">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

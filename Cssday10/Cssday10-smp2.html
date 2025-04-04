@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY10-SAMPLE PROJECT 2</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+            background: linear-gradient(135deg,red,orange);
+        }
+
+        /* Product Card */
+        .product-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Product Image */
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Product Info */
+        .product-card h3 {
+            margin: 10px 0;
+            color: #2c3e50;
+            font-size: 1.2rem;
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .product-card p {
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        /* Buy Now Button */
+        .buy-btn {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .buy-btn:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>Product Showcase</header>
+
+    <section class="product-container">
+        <article class="product-card">
+            <h3>Wireless Headphones</h3>
+            <img src="./Assets/Images/wireless-headphone.jpg" alt="Wireless Headphones">
+            <p>Best-selling product with exclusive features.</p>
+            <button class="buy-btn">Buy Now</button>
+        </article>
+
+        <article class="product-card">
+            <h3>Smart Watch</h3>
+            <img src="./Assets/Images/smartwatxg.jpg" alt="Smart Watch">
+            <p>High-quality and reliable.</p>
+            <button class="buy-btn">Buy Now</button>
+        </article>
+
+        <article class="product-card">
+            <h3>Bluetooth Speaker</h3>
+            <img src="./Assets/Images/bluetooth.jpg" alt="Bluetooth Speaker">
+            <p>Affordable and stylish.</p>
+            <button class="buy-btn">Buy Now</button>
+        </article>
+
+        <article class="product-card">
+            <h3>Gaming Mouse</h3>
+            <img src="./Assets/Images/gamingmouse.jpg" alt="Gaming Mouse">
+            <p>Top-rated by customers.</p>
+            <button class="buy-btn">Buy Now</button>
+        </article>
+
+        <article class="product-card">
+            <h3>Portable Charger</h3>
+            <img src="./Assets/Images/chrger.jpg" alt="Portable Charger">
+            <p>Limited edition available now.</p>
+            <button class="buy-btn">Buy Now</button>
+        </article>
+    </section>
+
+</body>
+</html>
