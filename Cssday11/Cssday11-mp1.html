@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY11-MINI PROJECT-23</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .background{
+            background-image: url(./Assets/Images/adorable-3d-kirby-hd-nt03b2p1drlb17lr.jpg);
+            height: 180vh;
+            width: 98vw;
+            margin: auto;
+            background-size: cover;
+        }
+        .container{
+            background-color: black;
+            width: 98vw;
+            color: white;
+            padding: 20px;
+            top: 0;
+            position: fixed;
+            z-index: 1000;
+        }
+        nav{
+            display: flex;
+            flex-direction:row;
+            gap: 10px;
+        }
+        nav a{
+            padding: 10px;
+            text-decoration: none;
+            position: relative;
+            color: white;
+        }
+        .search{
+            width: 30vw;
+            border-radius: 5px;
+        }
+        .image{
+            height: 40px;
+            width: 150px;
+            background-color: rgb(255, 218, 239);
+            border-radius: 100px;
+        }
+        .Contact-us{
+            position: absolute;
+            left: 80%;
+        }
+        .user{
+            position: absolute;
+           left: 90%;
+        }
+        nav a:hover{
+            background: linear-gradient(135deg,pink,rgb(194, 81, 100));
+        }
+        .articles {
+            width: 60vw;
+            margin: auto;
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+            gap: 20px;
+            padding: 30px;
+            position: relative;
+            top: 150px;
+        }
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    color: black;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: gray;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <nav>
+                <img src="./Assets/Images/myntra-removebg-preview.png" class="image">
+                <a href="#">🏠Home</a>
+                <a href="#">📢About-Us</a>
+                <a href="#">🌐Our-Services</a>
+                <input type="search" class="search" placeholder="🔎search Here">
+                <a href="#" class="Contact-us">☎️ Contact-us</a>
+                <a href="#" class="user">👤User</a>
+            </nav>
+        </div>
+        <div class="articles">
+            <article class="card">
+                <img src="./Assets/Images/tshirt.jpg" alt="T-Shirt">
+                <h3>👕 T-Shirt</h3>
+                <p>Comfortable cotton T-shirt available in all sizes.</p>
+            </article>
+            <article class="card">
+                <img src="./Assets/Images/salwar.jpg" alt="Salwar">
+                <h3>👗 Salwar</h3>
+                <p>Elegant traditional salwars in vibrant colors.</p>
+            </article>
+            <article class="card">
+                <img src="./Assets/Images/shoes.jpg" alt="Shoes">
+                <h3>👟 Shoes</h3>
+                <p>Stylish sports and casual shoes for all-day wear.</p>
+            </article>
+            <article class="card">
+                <img src="./Assets/Images/handbag.webp" alt="Handbags">
+                <h3>👜 Handbags</h3>
+                <p>Trendy handbags to match all your outfits.</p>
+            </article>
+            <article class="card">
+                <img src="./Assets/Images/sunglass.jpg" alt="Cool Glass">
+                <h3>🕶️ Cool Glass</h3>
+                <p>Stylish sunglasses to protect your eyes in style.</p>
+            </article>
+        </div>        
+    </div>
+</body>
+</html>

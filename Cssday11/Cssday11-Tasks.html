@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY-11-TASKS</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        header{
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg,rgb(213, 216, 62),rgb(0, 255, 221));
+            border-bottom: 10px solid rgb(2, 204, 2);
+            box-shadow: 5px 5px 10px black;
+            margin: auto;
+            width: 98vw;
+            top: 0;
+            position: sticky;
+            z-index: 1000;
+        }
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------    */
+        .task131-img{
+            height: 200px;
+            position: static;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px black;
+        }
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+        .task132{
+            background: linear-gradient(135deg,blue,red);
+            width: 50vw;
+            margin: auto;
+            padding: 10px;
+        }
+        .task132-img{
+            height: 200px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px black;
+            position: relative;  
+        }
+        .task132-img1{
+            height: 200px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px black;
+            position: relative;  
+            left: 350px;
+        }
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+        .task133{
+            position: relative;
+            margin: auto;
+            background: linear-gradient(135deg,rgb(236, 185, 217),rgb(143, 70, 143));
+            width: 30vw;
+            height: 30vh;
+            text-align: center;
+            box-shadow: 5px 5px 10px black;
+        }
+        .task133 p{
+            background:linear-gradient(135deg,rgb(66, 4, 43),rgb(231, 15, 231));
+            width: 150px;
+            padding: 20px;
+            position: relative;
+            left: 20px;
+        }
+        .task133-absolute{
+            background:linear-gradient(135deg,rgb(236, 185, 217),rgb(231, 15, 231));
+            width: 150px;
+            padding: 20px;
+            position: absolute;
+            right: 30px;
+            bottom:10px;
+        }
+/* -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------    */
+.navbar {
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 100px;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      color: #00ffcc;
+    }
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.task137 {
+  background: linear-gradient(135deg,rgb(192, 255, 218),rgb(211, 174, 214));
+  height: 30vh;
+  width: 30vw;
+  margin: auto;
+  position: relative;
+  box-shadow: 5px 5px 10px black;
+}
+
+.task137 p {
+  text-align: center;
+  position: relative;
+  top: 60px;
+  font-size: 1.5rem;
+}
+
+.highlight {
+  color: red;
+  position: relative; /* Needed for ::after to position correctly */
+}
+
+.highlight::after {
+  content: "This is additional info";
+  position: absolute;
+  left: 0;
+  top: 120%;
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+.highlight:hover::after {
+  transform: scale(1);
+  cursor: pointer;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.task138 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(73, 62, 62, 0.5); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  text-align: center;
+}
+
+.close-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.task139{
+    background-color: #131212;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+}
+
+.task140 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none; /* hidden by default */
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/*  Show dropdown only on hover */
+.task140:hover .dropdown-content {
+  display: block;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 50vh;
+  width: 250px;
+  background:linear-gradient(135deg,rgb(94, 26, 94),pink);
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px black;
+}
+
+.task143{
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 50px auto;
+      background-color: #f0f0f0;
+      border: 2px solid #ccc;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      color: white;
+      text-align: center;
+      line-height: 150px;
+      font-weight: bold;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+
+    .box1 {
+      background-color: red;
+      z-index: 1;
+    }
+
+    .box2 {
+      background-color: green;
+      top: 70px;
+      left: 70px;
+      z-index: 2;
+    }
+
+    .box3 {
+      background-color: blue;
+      top: 90px;
+      left: 90px;
+      z-index: 3;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>🐼Css-Day11-Tasks🐼</h1>
+    </header>
+<div class="div1">
+<h3 class="h33">TASK-131</h3>
+<h5>CSS 131: Create a static element and observe how it behaves in the normal document flow.</h5>
+    <div class="task131">
+        <img src="./Assets/Images/rabbit.avif" class="task131-img">
+        <img src="./Assets/Images/rabbitt.jpg" class="task131-img">
+    </div>
+    <br>
+    <hr>
+</div>
+<h3>TASK-132</h3>
+<h5>CSS 132: Create a relative element and offset it using top and left.</h5>
+    <div class="task132">
+        <img src="./Assets/Images/rabbitt.jpg" class="task132-img">
+        <img src="./Assets/Images/rabbitt.jpg" class="task132-img1">
+    </div>
+    <br>
+    <hr>
+
+<h3>TASK-133</h3>
+<h5>CSS 133: Add an absolute element inside a relative parent and position it in the bottom-right corner.</h5>
+    <div class="task133">
+        <p>Relative Box</p>
+        <div class="task133-absolute">
+        Absolute Box
+        </div>
+    </div>
+    <br>
+    <hr>
+
+
+<h3>TASK-134</h3>
+<h5>CSS 134: Create a fixed navigation bar that stays visible when scrolling.</h5>
+<div class="navbar">
+    <div class="logo">🌟 MyWebsite</div>
+    <ul>
+      <li><a href="#home">🏠 Home</a></li>
+      <li><a href="#about">ℹ️ About Us</a></li>
+      <li><a href="#contact">📞 Contact Us</a></li>
+    </ul>
+  </div>
+  <br>
+  <hr>
+
+
+<h3>TASK-135</h3>
+<h5>CSS 135: Add a sticky header that sticks to the top of the viewport when scrolling.</h5>
+<br>
+<hr>
+
+<h3>TASK-137</h3>
+<h5>CSS 137: Create a highlighted text that reveals additional info on hover using ::after pseudo-element</h5>
+    <div class="task137">
+        <p>
+            Hover over the <span class="highlight">highlighted text</span> to see more info!
+        </p>
+    </div>
+    <br>
+    <hr>
+
+
+<h3>TASK-138</h3>
+<h5>CSS 138: Build a modal window with absolute positioning and center it using transform.</h5>
+<div class="task-138">
+    <div class="modal">
+      <h2>Modal Title</h2>
+      <p>This is a centered modal using absolute positioning and transform.</p>
+      <button class="close-btn">Close</button>
+    </div>
+  </div>
+  <br>
+  <hr>
+
+
+<h3>TASK-139</h3>
+<h5>CSS 139: Position a footer at the bottom of the viewport using fixed</h5>
+<div class="task139">
+    <p>© CSS-DAY-11-TASKS | All Rights Reserved</p>
+</div>
+<br>
+<hr>
+
+
+
+<h3>TASK-140</h3>
+<h5>CSS 140: Create a dropdown menu using absolute positioning.</h5>
+<div class="task140">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <br>
+  <hr>
+
+
+<h3>TASK-141</h3>
+<h5>CSS 141: Add a sticky sidebar that remains visible while scrolling through content.</h5>
+        <div class="container">
+            <div class="sidebar">
+              <h2>Sticky Sidebar</h2>
+              <p>Menu Item 1</p>
+              <p>Menu Item 2</p>
+              <p>Menu Item 3</p>
+        </div>
+        </div>
+        <br>
+        <hr>
+
+
+
+<h3>TASK-143</h3>
+<h5>CSS 143: Combine relative, absolute, and z-index to create layered content.</h5>
+<div class="task143">
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+  </div>
+<h5></h5>
+</body>
+</html>

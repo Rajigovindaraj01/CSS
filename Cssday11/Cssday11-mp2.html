@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY11-MINI PROJECT 24</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .background {
+            background-image: url(./Assets/Images/noty-backgrounds.jpg);
+            height: 100vh;
+            width: 98vw;
+            background-size: cover;
+            margin: auto;
+            background-repeat: no-repeat;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .card {
+            background: linear-gradient(135deg, rgba(206, 101, 197, 0.5), rgba(255, 0, 0, 0.5));
+            width: 20vw;
+            height: 80vh;
+            margin: auto;
+            position: relative;
+            top: 80px;
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            gap: 5px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .notification {
+            background-color: rgba(255, 255, 255, 0.3);
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+            padding: 8px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .images img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .profile h1 {
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+        .profile p {
+            font-size: 14px;
+        }
+        .time {
+            font-size: 12px;
+            text-align: right;
+            color: #333;
+        }
+        .notify1{
+            font-size: 30px;
+            position: absolute;
+            top: -15px;
+            right: 0px;
+        }
+        .notify2{
+            font-size: 30px;
+            position: absolute;
+            right: 0;
+            top: -15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="container1">
+            <div class="card">
+                <div class="notification">
+                    <div class="images">
+                        <img src="./Assets/Images/profile1.jpg" alt="Profile">
+                    </div>
+                    <div class="profile">
+                        <h1>👤 Name</h1>
+                        <p>📩 New Message</p>
+                    </div>
+                    <div class="time">
+                         10:30 AM 
+                    </div>
+                    <span class="notify1">❷</span>
+                </div>
+
+                <div class="notification">
+                    <div class="images">
+                        <img src="./Assets/Images/profil2.jpg" alt="Profile">
+                    </div>
+                    <div class="profile">
+                        <h1>👤 Alex</h1>
+                        <p>👗 Order Placed</p>
+                    </div>
+                    <div class="time">
+                         09:15 AM
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <div class="images">
+                        <img src="./Assets/Images/profile3.jpg" alt="Profile">
+                    </div>
+                    <div class="profile">
+                        <h1>👤 Sneha</h1>
+                        <p>🥿 Shoe Delivered</p>
+                    </div>
+                    <div class="time">
+                         08:45 AM 
+                    </div>
+                    <span class="notify2">❶</span>
+                </div>
+
+                <div class="notification">
+                    <div class="images">
+                        <img src="./Assets/Images/profile4.jpg" alt="Profile">
+                    </div>
+                    <div class="profile">
+                        <h1>👤 Rani</h1>
+                        <p>👜 New Handbag</p>
+                    </div>
+                    <div class="time">
+                         11:00 AM
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <div class="images">
+                        <img src="./Assets/Images/profile5.jpg" alt="Profile">
+                    </div>
+                    <div class="profile">
+                        <h1>👤 Vivek</h1>
+                        <p>🕶️ Sunglasses Offer</p>
+                    </div>
+                    <div class="time">
+                         07:30 AM
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <div class="images">
+                        <img src="./Assets/Images/profile6.jpg" alt="Profile">
+                    </div>
+                    <div class="profile">
+                        <h1>👤 Meera</h1>
+                        <p>👟 Sports Shoes Shipped</p>
+                    </div>
+                    <div class="time">
+                        06:50 AM
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+
+        </div>
+    </div>
+</body>
+</html>

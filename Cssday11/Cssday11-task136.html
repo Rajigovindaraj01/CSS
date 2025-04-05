@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-136</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, rgb(213, 216, 62), rgb(0, 255, 221));
+            border-bottom: 10px solid rgb(2, 204, 2);
+            box-shadow: 5px 5px 10px black;
+            margin: auto;
+            width: 98vw;
+            top: 0;
+            position: sticky;
+            z-index: 1000;
+        }
+
+        .content {
+            background-color: rgba(117, 114, 110, 0.8); /* semi-transparent */
+            height: 100vh;
+            width: 99vw;
+            margin: auto;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content h2 {
+            color: white;
+            font-size: 2rem;
+            position: relative;
+            top: 100px;
+        }
+
+        .z-index {
+            background:linear-gradient(135deg,rgb(0, 247, 255),rgb(180, 207, 79));
+            padding: 50px;
+            width: 30vw;
+            position: fixed;
+            top: 200px;
+            left: 35vw;
+            z-index: 200;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+
+        .z-index h2 {
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .z-index p {
+            font-size: 1rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🐼 Css-Day11-Tasks-136 and Task 142🐼</h1>
+    </header>
+    <h4>CSS 136: Use z-index to position overlapping elements (e.g., a modal above a background).</h4>
+    <div class="content">
+        <h2>Example of overlapping z-index</h2>
+    </div>
+
+    <div class="z-index">
+        <h2>z-index Modal</h2>
+        <p>This is the overlap Modal</p>
+    </div>
+</body>
+</html>

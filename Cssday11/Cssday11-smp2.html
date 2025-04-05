@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS-DAY-11-SAMPLE MINI PROJECT-2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    .background {
+      position: relative;
+      background-image: url(./Assets/Images/little-elephant-cruising-through-the-woods-on-a-moped-ai-generated-free-photo.jpg);
+      height: 100vh;
+      width: 100vw;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5); 
+      padding: 30px;
+      border-radius: 15px;
+      color: white;
+      box-shadow: 5px 5px 10px black;
+    }
+
+
+    .overlay h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .overlay p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .overlay button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #ff9900;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .overlay button:hover {
+      background-color: #cc7a00;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="overlay">
+      <h1>Little Elephant on an Adventure</h1>
+      <p>Explore the woods with our adventurous little elephant on a moped!</p>
+      <button>Join the Journey</button>
+    </div>
+  </div>
+</body>
+</html>
