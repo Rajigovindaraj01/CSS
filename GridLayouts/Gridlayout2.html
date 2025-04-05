@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID LAYOUT-2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Pacifico&family=Rochester&family=Sacramento&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        .background{
+            background-image: url(./Assets/Images/panda.jpg);
+            height: 99vh;
+            width: 98vw;
+            background-size: cover;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        
+
+        .grid{
+            height: 90vh;
+            width: 50vw;
+            margin: auto;
+            position: relative;
+            top: 15px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            padding: 10px;
+            background-color: rgb(117, 112, 112);
+        }
+        .item2{
+            grid-row: span 2;
+        }
+        .images{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .images:hover{
+            transform: scale(1.1);
+        }
+        h2{
+            text-align: center;
+            margin-top: 100px;
+            font-size: 30px;
+        }
+        b{
+            text-align: center;
+            color: green;
+            font-size: 60px;
+            font-family: "Cookie", cursive;
+            text-shadow: 3px 3px 5px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="container1">
+            <h2>Welcome To<br><b>My Panda Gallery</b></h2>
+        </div>
+        <div class="container2">
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="./Assets/Images/panda1.jpg" class="images">
+                </div>
+                <div class="grid-item item2">
+                    <img src="./Assets/Images/panda2.jpeg" class="images">
+                </div>
+                <div class="grid-item item3">
+                    <img src="./Assets/Images/panda3.jpg" class="images">
+                </div>
+                <div class="grid-item">
+                    <img src="./Assets/Images/panda4.jpg" class="images">
+                </div>
+                <div class="grid-item">
+                    <img src="./Assets/Images/panda5.jpg" class="images">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

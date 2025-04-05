@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-GRID-LAYOUT-5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Pacifico&family=Rochester&family=Sacramento&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        .background{
+            background-image: url(./Assets/Images/cakeback.jpg);
+            height: 100vh;
+            width: 98vw;
+            background-size: cover;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .container1{
+            background-color:rgba(56, 49, 49, 0.5);
+            display: grid;
+            grid-template-rows: 1fr 1fr ;
+            gap: 10px;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .row1{
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr; 
+            grid-template-rows: auto;
+            gap: 10px;
+            overflow: hidden;
+        }
+        .row2{
+            display: grid;
+            grid-template-columns:2fr 1fr 1fr;
+            grid-template-rows: auto;
+            gap: 10px;
+            overflow: hidden;
+        }
+        .item{
+            background-color: antiquewhite;
+            overflow: hidden;
+            border: 5px solid rgb(167, 162, 162);
+        }
+        .item:hover{
+            transform: scale(1.1);
+        }
+        .images{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        h1{
+            text-align: center;
+            margin-top: 50px;
+            color: rgb(216, 213, 213);
+        }
+        b{
+            font-size: 60px;
+            font-family: "Cookie", cursive;
+            text-shadow: 3px 3px 5px rgb(131, 138, 131);
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="container1">
+            <div class="row1">
+            <div class="item">
+                <img src="./Assets/Images/cake1.jpg" class="images">
+            </div>
+            <div class="item">
+                <img src="./Assets/Images/cake2.jpg" class="images">
+            </div>
+            <div class="item">
+                <img src="./Assets/Images/cake3.jpg" class="images">
+            </div>
+            </div>
+            <div class="row2">
+            <div class="item">
+                <img src="./Assets/Images/caak4.avif" class="images">
+            </div>
+            <div class="item">
+                <img src="./Assets/Images/cake5.jpg" class="images">
+            </div>
+            <div class="item">
+                <img src="./Assets/Images/cake6.jpg" class="images">
+            </div>
+            </div>
+        </div>
+        <div class="container2">
+            <h1>Welcome To<br> <b>My Cake Gallery </b></h1>
+        </div>
+    </div>
+</body>
+</html>

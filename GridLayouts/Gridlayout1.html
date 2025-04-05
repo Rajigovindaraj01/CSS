@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-GRID-LAYOUT 1</title>
+    <style>
+        .background{
+            background-image: url(./Assets/Images/photo-1578507065211-1c4e99a5fd24.jpg);
+            background-size: cover;
+            height: 100vh;
+        }
+        .container{
+            background-color: rgba(216, 201, 201, 0.5);
+            width: 80vw;
+            margin: auto;
+            position: relative;
+            top: 25px;
+            max-height: 90vh;
+            overflow: hidden;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+        .row1{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            overflow: hidden;
+        }
+        .row1-item{
+            background-color: aqua;
+        }
+        .row2{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            overflow: hidden;
+        }
+        .row2-item{
+            background-color: antiquewhite;
+        }
+        .images{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .images:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+    <div class="container">
+        <div class="row1">
+            <div class="row1-item">
+                <img src="./Assets/Images/fish11.jpg" class="images">
+            </div>
+            <div class="row1-item">
+                <img src="./Assets/Images/fish2.jpg" class="images">
+            </div>
+        </div>
+        <div class="row2">
+            <div class="row2-item">
+                <img src="./Assets/Images/fish3.jpg" class="images">
+            </div>
+            <div class="row2-item">
+                <img src="./Assets/Images/fish4.jpg" class="images">
+            </div>
+            <div class="row2-item">
+                <img src="./Assets/Images/fish5.jpg" class="images">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

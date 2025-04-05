@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID LAYOUT-3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Pacifico&family=Rochester&family=Sacramento&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        .background{
+            background-image: url(./Assets/Images/catback.png);
+            max-height: 100vh;
+            width: 98vw;
+            background-size: cover;
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+        }
+        .container1{
+            max-height: 90vh;
+            background-color: rgba(80, 74, 74, 0.5);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 20px;
+        }
+        .item{
+            background-color: antiquewhite;
+            overflow: hidden;
+            border: 5px solid rgb(44, 42, 42);
+        }
+        .item:hover{
+            transform: scale(1.1);
+        }
+        .item1{
+            grid-row: span 2;
+        }
+        .item2{
+            grid-column: span 2;
+        }
+        .item3{
+            grid-column: span 2;
+        }
+        .item4{
+            grid-column: span 3;
+        }
+        .item5{
+            grid-column: span 1;
+        }
+        .item6{
+            grid-row: span 2;
+        }
+        .item7{
+            grid-row: span 2;
+        }
+        .item8{
+            grid-column: span 1;
+        }
+        .images{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        h1{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 60px;
+            font-family: "Cookie", cursive;
+            text-shadow: 3px 3px 5px rgb(240, 227, 227);
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="container1">
+            <div class="item item1">
+                <img src="./Assets/Images/cat1.jpg" class="images">
+            </div>
+            <div class="item item2">
+                <img src="./Assets/Images/cat2.jpg" class="images">
+            </div>
+            <div class="item item3">
+                <img src="./Assets/Images/cat3.jpg" class="images">
+            </div>
+            <div class="item item4">
+                <img src="./Assets/Images/cat4.jpg" class="images">
+            </div>
+            <div class="item item5">
+                <img src="./Assets/Images/cat5.webp" class="images">
+            </div>
+            <div class="item item6">
+                <img src="./Assets/Images/cat6.avif" class="images">
+            </div>
+            <div class="item item7">
+                <img src="./Assets/Images/cat7.jpg" class="images">
+            </div>
+            <div class="item item8">
+                <img src="./Assets/Images/cat8.jpg" class="images">
+            </div>
+        </div>
+        <div class="container2">
+            <h1>Welcome to My Gallery</h1>
+        </div>
+    </div>
+</body>
+</html>
