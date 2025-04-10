@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAMPLE MINI PROJECT-CSS-DAY12</title>
+  <style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(145deg, #9b59b6, #8e44ad);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .achievement-box {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 600px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      gap: 15px;
+    }
+
+    .progress-container {
+      flex: 1;
+      background: #eee;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      overflow: hidden;
+    }
+
+    .progress {
+      background: linear-gradient(90deg, #b900de, #ff009d);
+      height: 20px;
+      border-radius: 30px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      padding: 0 10px;
+      animation: grow infinite 2s ease-in-out;
+    }
+
+    .icon {
+      margin-right: 8px;
+    }
+
+    @keyframes grow {
+      0% {
+        width: 0;
+        opacity: 0.2;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="achievement-box">
+    <h2>Achievement-Box</h2>
+    <div class="row">
+      <div class="progress-container">
+        <div class="progress" style="width: 40%">
+          <span class="icon">🔑</span> 2/5 login
+        </div>
+      </div>
+      <div class="progress-container">
+        <div class="progress" style="width: 60%">
+          <span class="icon">❤️</span> 3/5 love
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="progress-container">
+        <div class="progress" style="width: 60%">
+          <span class="icon">👥</span> 3/5 community
+        </div>
+      </div>
+      <div class="progress-container">
+        <div class="progress" style="width: 80%">
+          <span class="icon">📷</span> 4/5 photography
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="progress-container">
+        <div class="progress" style="width: 80%">
+          <span class="icon">💬</span> 4/5 communication
+        </div>
+      </div>
+      <div class="progress-container">
+        <div class="progress" style="width: 40%">
+          <span class="icon">📞</span> 2/5 call
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
