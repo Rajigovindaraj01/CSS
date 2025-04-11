@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toy Shop - Grid Cards</title>
+  <style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    .background{
+        background-image: url(./Assets/Images/bubble\ kitty.png);
+        height: 100vh;
+        width: 97vw;
+        margin: auto;
+        background-size: cover;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 50px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px black;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      color: #e55a5a; 
+      font-weight: bold;
+    }
+
+    .card button {
+      padding: 10px 20px;
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .card button:hover {
+      background-color: #e55a5a;
+    }
+    
+  </style>
+</head>
+<body>
+<div class="background">
+  <h1>🧸 Toy Shop</h1>
+  <div class="card-container">
+    <div class="card">
+      <img src="./Assets/Images/car.jpg" alt="Toy Car">
+      <h3>Toy Car</h3>
+      <p>₹250</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="./Assets/Images/doll.jpg" alt="Doll">
+      <h3>Doll</h3>
+      <p>₹300</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="./Assets/Images/teddy.jpg" alt="Teddy Bear">
+      <h3>Teddy Bear</h3>
+      <p>₹500</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="./Assets/Images/building.jpg" alt="Blocks">
+      <h3>Building Blocks</h3>
+      <p>₹450</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

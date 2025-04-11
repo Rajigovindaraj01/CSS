@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY13-SAMPLE MINI PROJECT1</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .background{
+            background-image: url(./Assets/Images/smp1.png);
+            height: 100vh;
+            width: 98vw;
+            background-size: cover;
+            margin: auto;
+        }
+        
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    nav {
+      background-color: #1f1f2e;
+      padding: 20px;
+    }
+
+    .nav-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      gap: 25px;
+      justify-content: end;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #4a4a8a;
+    }
+
+    /* Responsive for mobile */
+    @media (max-width: 768px) {
+      .nav-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 15px;
+        text-align: center;
+      }
+
+      .nav-links {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        justify-content: center;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <nav>
+            <div class="nav-container">
+              <div class="logo">MyWebsite</div>
+              <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+              </div>
+            </div>
+          </nav>
+    </div>
+</body>
+</html>

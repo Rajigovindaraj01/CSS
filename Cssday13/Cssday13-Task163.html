@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY-13-TASK-163</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Oswald:wght@200..700&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&family=Rochester&family=Sacramento&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .background{
+            background-image: url(./Assets/Images/turtle.png);
+            height: 100vh;
+            width: 99vw;
+            margin: auto;
+            background-size: cover;
+        }
+        .container{
+            height: 90vh;
+            width: 70vw;
+            margin: auto;
+            position: relative;
+            top: 30px;
+            backdrop-filter: blur(4px);
+            display: grid;
+            grid-template-areas: 
+            "head head head"
+            "sidebar content content"
+            "foot foot foot";
+            gap: 10px;
+            overflow: hidden;
+        }
+        .header{
+            grid-area: head;
+            background-color: rgba(27, 26, 26, 0.5);
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            height: 15vh;
+            align-content: center;
+            font-family: "Berkshire Swash", serif;
+            text-shadow: 3px 3px 5px black;
+        }
+        .sidebarr{
+            grid-area: sidebar;
+            background-color:rgba(177, 165, 165, 0.568);
+            height: 60vh;
+            text-align: center;
+            align-content: center;
+            font-family: "Berkshire Swash", serif;
+            text-shadow: 3px 3px 5px black;
+            font-size: 30px;
+        }
+        .contents{
+            grid-area: content;
+            background-color:rgba(177, 165, 165, 0.568);
+            height: 60vh;
+            display: grid;
+            grid-template-areas: 
+            "cont1 cont1"
+            "cont2  cont3";
+            padding: 10px;
+            gap: 10px;
+            overflow: hidden;
+        }
+        .cont1{
+            grid-area: cont1;
+            background-color: rgba(255, 160, 208, 0.801);
+            overflow: hidden;
+        }
+        .cont2{
+            grid-area: cont2;
+            background-color: rgba(255, 160, 208, 0.801);
+            text-align: center;
+            padding: 10px;
+        }
+        .cont3{
+            grid-area: cont3;
+            background-color: rgba(255, 160, 208, 0.801);
+            text-align: center;
+            padding: 10px;
+        }
+        .footer{
+            grid-area: foot;
+            background-color: rgba(27, 26, 26, 0.5);
+            height: 10vh;
+            color: whitesmoke;
+            align-content: center;
+            text-align: center;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        @media (min-width:300px) and (max-width:679px){
+            .container{
+                display: grid;
+                grid-template-areas: 
+                "head"
+                "content"
+                "foot";
+                grid-template-columns: 1fr;
+            }
+            .sidebarr{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="header">
+                Welcome to My World
+            </div>
+            <div class="sidebarr">
+                Turtle's World
+            </div>
+            <div class="contents">
+                <div class="cont1">
+                    <img src="./Assets/Images/turtle 1.jpg">
+                </div>
+                <div class="cont2">
+                    Large Blue Sea Turtle
+                </div>
+                <div class="cont3">
+                    ₹20,000 only
+                </div>
+            </div>
+            <div class="footer">
+                © Turtle website | All Rights reserved
+            </div>
+        </div>
+    </div>
+</body>
+</html>

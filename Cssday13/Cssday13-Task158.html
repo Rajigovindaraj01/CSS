@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY13-TASK-158</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Oswald:wght@200..700&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&family=Rochester&family=Sacramento&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    header h1{
+    text-align: center;
+    background: linear-gradient(135deg,rgb(235, 87, 112),rgb(207, 106, 207));
+    padding: 10px;
+    width: 97vw;
+    margin: auto;
+    border-bottom: 5px solid rgb(245, 204, 245);
+    box-shadow: 5px 5px 10px black;
+    position: fixed;
+    z-index: 1000;
+    font-family: "Cookie", cursive;
+    letter-spacing: 3px;
+    }
+
+    .background{
+        background-image: url(./Assets/Images/Lavender-colored-clouds-gently-swirling-in-a-pastel-sky-evoking-a-dreamlike-serene-feel-perfect-for-a-peaceful-wallpaper.webp);
+        height: 100vh;
+        width: 98vw;
+        background-size: cover;
+    }
+    .content{
+        width: 50vw;
+        height: 60vh;
+        margin: auto;
+        position: relative;
+        top: 100px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        backdrop-filter: blur(5px);
+        gap: 10px;
+        padding: 20px;
+        box-shadow: 5px 5px 10px rgb(47, 2, 56);
+    }
+    .content1{
+        border: 5px solid white;
+        background-color:rgba(236, 79, 79, 0.5);
+        align-items: center;
+        align-content: center;
+        font-family: "Cookie", cursive;
+        font-size: 1.2em;
+        box-shadow: 5px 5px 10px rgb(47, 2, 56);
+    }
+    .content2{
+        border: 5px solid white;
+        background-color:rgba(228, 102, 102, 0.5);
+        align-content: center;
+        font-family: "Cookie", cursive;
+        font-size: 1.2em;
+        box-shadow: 5px 5px 10px rgb(47, 2, 56);
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+
+    @media(min-width: 300px) and (max-width: 600px){
+        .background{
+        background-image: url(./Assets/Images/Lavender-colored-clouds-gently-swirling-in-a-pastel-sky-evoking-a-dreamlike-serene-feel-perfect-for-a-peaceful-wallpaper.webp);
+        height: 130vh;
+        width: 98vw;
+        background-size: cover;
+    }
+        .content{
+        width: 80vw;
+        height: 50%;
+        margin: auto;
+        position: relative;
+        top: 100px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        backdrop-filter: blur(5px);
+        gap: 10px;
+        box-shadow: 5px 5px 10px rgb(47, 2, 56);
+    }
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 14px;
+    }
+    }
+    
+    
+    @media(min-width: 600px) and (max-width: 1020px){
+        .background{
+        background-image: url(./Assets/Images/Lavender-colored-clouds-gently-swirling-in-a-pastel-sky-evoking-a-dreamlike-serene-feel-perfect-for-a-peaceful-wallpaper.webp);
+        height: 130vh;
+        width: 98vw;
+        background-size: cover;
+    }
+        .content{
+        width: 80vw;
+        height: 50%;
+        margin: auto;
+        position: relative;
+        top: 100px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        backdrop-filter: blur(5px);
+        gap: 10px;
+        box-shadow: 5px 5px 10px rgb(47, 2, 56);
+    }
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 18px;
+    }
+    }
+    @media(min-width: 1020px){
+        .background{
+        background-image: url(./Assets/Images/Lavender-colored-clouds-gently-swirling-in-a-pastel-sky-evoking-a-dreamlike-serene-feel-perfect-for-a-peaceful-wallpaper.webp);
+        height: 130vh;
+        width: 98vw;
+        background-size: cover;
+    }
+        .content{
+        width: 80vw;
+        height: 60%;
+        margin: auto;
+        position: relative;
+        top: 100px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        backdrop-filter: blur(5px);
+        gap: 10px;
+        box-shadow: 5px 5px 10px rgb(47, 2, 56);
+    }
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 22px;
+    }
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🦋Css-Day-13-Tasks🦋</h1>
+    </header>
+    <h3>CSS 158: Responsive Font Sizes</h3>
+    <div class="background">
+        <div class="content">
+            <div class="content1">
+                <h1>Life is short, eat the cake 🍰 and savor every bite!</h1>
+                <p>Life is all about enjoying small joys, and having a piece of cake is one of them. 🍰</p>
+            </div>
+            <div class="content2">
+                <h1>A party without cake is just a meeting 🎉🍰</h1>
+                <p>Cake adds joy and celebration to any gathering, turning an ordinary meeting into a memorable party. 🎂</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY-13-TASKS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Oswald:wght@200..700&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&family=Rochester&family=Sacramento&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    header h1{
+    text-align: center;
+    background: linear-gradient(135deg,rgb(235, 87, 112),rgb(207, 106, 207));
+    padding: 10px;
+    width: 97vw;
+    margin: auto;
+    border-bottom: 5px solid rgb(245, 204, 245);
+    box-shadow: 5px 5px 10px black;
+    position: fixed;
+    z-index: 1000;
+    font-family: "Cookie", cursive;
+    letter-spacing: 3px;
+    }
+    .background{
+        background:url(./Assets/Images/task1back.jpg);
+        height: 100vh;
+        margin: auto;
+        background-size: cover;
+        width: 95vw;
+        font-size:1.5em;
+        line-height: 1em;
+        padding: 10px;
+
+    }
+    .content{
+        background-color: rgba(233, 205, 252, 0.5);
+        padding: 10px;
+        border: 5px solid whitesmoke;
+        box-shadow: 5px 5px 10px black;
+    }
+    h1 , p{
+        text-align: center;
+    }
+    h1{
+        font-family: "Berkshire Swash", serif;
+    }
+    p{
+         font-family: "Cookie", cursive;
+         font-size: 1.5em;
+         line-height: 50px;
+    }
+
+    @media(max-width: 600px){
+        .background{
+            background-image: url(./Assets/Images/Landscape-imac-Wallpaper-4k.jpg);
+            height: 130vh;
+        }
+        .content h1{
+            font-size: 1em;
+        }
+    }
+
+    @media(min-width: 601px )and (max-width: 1024px){
+        .background{
+            background-image: url(./Assets/Images/pngtree-stars-shining-through-soft-and-dreamy-pastel-clouds-in-3d-rendering-picture-image_3702177.jpg);
+            height: 100vh;
+        }
+    }
+    @media (min-width: 1025px){
+        .background{
+            background:url(./Assets/Images/task1back.jpg);
+            height: 100vh;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🦋Css-Day-13-Tasks🦋</h1>
+    </header>
+    <main>
+        <h3>TASK-157</h3>
+        <h4>CSS 157: Basic Breakpoints</h4>
+        <div class="background">
+            <div class="content">
+            <h1>Welcome to My Website</h1>
+            <p>I’m so happy you’re here! 😊 This site is built with love, creativity, and a passion for sharing 💡✨. Whether you’re exploring my projects 💻, checking out my services 🛠️, or just browsing for fun 🎈—I hope you find something that inspires you 💖. Everything is designed to be simple, informative, and user-friendly 🧭. Feel free to explore every corner 🕵️‍♀️ and reach out if you have any questions or thoughts 💬. Thanks for visiting—your presence means the world to me 🌍. Stay connected, and enjoy your time here! 🚀
+            </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

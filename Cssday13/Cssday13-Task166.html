@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY-13-TASK-166</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .background {
+            background-image: url(./Assets/Images/back.png);
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-position: center;
+            margin: auto;
+        }
+
+        .container {
+            height: 70vh;
+            width: 25vw;
+            margin: auto;
+            position: relative;
+            top: 100px;
+            display: grid;
+            grid-template-rows: 4fr 1fr;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 5px 5px 10px black;
+        }
+
+        .content1 {
+            background-color: aliceblue;
+        }
+
+        .content2 {
+            background-color: aliceblue;
+            position: relative;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            transition: transform 1s ease;
+        }
+
+        button {
+            height: 8vh;
+            width: 10vw;
+            position: absolute;
+            top: 10px;
+            bottom: 20px;
+            background: linear-gradient(135deg,pink,purple);
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid whitesmoke;
+            box-shadow: 3px 3px 10px rgb(136, 4, 76);
+            transition: transform 1s ease;
+        }
+
+        button:hover {
+            transform: translateX(-50%) scale(1.1);
+            cursor: pointer;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+
+        @media (min-width:320px) and (max-width:600px) {
+            .container {
+                width: 90vw;
+            }
+
+            button {
+                width: 30vw;
+            }
+        }
+
+        @media (min-width:601px) and (max-width:1020px) {
+            .container {
+                width: 50vw;
+            }
+
+            button {
+                width: 20vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="content1">
+                <img src="./Assets/Images/dinosaur.jpg" alt="Dinosaur Image">
+            </div>
+            <div class="content2">
+                <button>Click to Watch</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

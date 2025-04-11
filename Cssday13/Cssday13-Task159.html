@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY-13-TASK-159</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            background-image: url(./Assets/Images/thumb-1920-1278431.jpg);
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            margin: auto;
+        }
+        header{
+            background-color: rgba(0, 255, 191, 0.5);
+            backdrop-filter: blur(5px);
+            display:grid;
+            grid-template-columns:1fr 6fr 1fr ;
+            grid-template-rows: 1fr;
+            border-radius: 0px 0px 20px 20px;
+            box-shadow: 5px 5px 10px rgb(6, 109, 2);
+        }
+
+        .image img{
+            height: 100%;
+            width: 100%;
+        }
+        nav{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            justify-items: center;
+            align-content: center;
+        }
+        nav a{
+            padding: 10px 20px;
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        nav a:hover{
+            background:linear-gradient(135deg,rgb(16, 184, 133),rgb(113, 238, 228)) ;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgb(16, 184, 133);
+            cursor: pointer;
+        }
+        .icons{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+        }
+        .icons a{
+            border: 2px solid rgb(48, 216, 48);
+            padding: 10px;
+            border-radius: 100px;
+            color: white;
+            box-shadow: 3px 3px 5px green,-3px -3px 5px green;
+            transition: transform 1s ease;
+        }
+        .icons a:hover{
+            cursor: pointer;
+            color: lightgreen;
+            transform: scale(1.1);
+        }
+
+        @media(max-width:1021px){
+            .container{
+            background-image: url(./Assets/Images/thumb-1920-1278431.jpg);
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            margin: auto;
+        }
+        header{
+            background-color: rgba(0, 255, 191, 0.5);
+            backdrop-filter: blur(5px);
+            display:grid;
+            grid-template-columns:1fr 6fr 1fr ;
+            grid-template-rows: 1fr;
+            border-radius: 0px 0px 20px 20px;
+            box-shadow: 5px 5px 10px rgb(6, 109, 2);
+        }
+        .image img{
+            height: 100%;
+            width: 100%;
+        }
+        nav{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            justify-items: center;
+            align-content: center;
+        }
+        nav a{
+            padding: 10px 20px;
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        nav a:hover{
+            background:linear-gradient(135deg,rgb(16, 184, 133),rgb(113, 238, 228)) ;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgb(16, 184, 133);
+            cursor: pointer;
+        }
+        .icons{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+        }
+        .icons a{
+            border: 2px solid rgb(48, 216, 48);
+            padding: 10px;
+            border-radius: 100px;
+            color: white;
+            box-shadow: 3px 3px 5px green,-3px -3px 5px green;
+            transition: transform 1s ease;
+        }
+        .icons a:hover{
+            cursor: pointer;
+            color: lightgreen;
+            transform: scale(1.1);
+        }
+        }
+
+
+        @media (min-width:600px) and (max-width:1020px){
+            header{
+            background-color: rgba(0, 255, 191, 0.5);
+            backdrop-filter: blur(5px);
+            display:grid;
+            grid-template-columns:1fr 3fr 1fr;
+            border-radius: 0px 0px 20px 20px;
+            box-shadow: 5px 5px 10px rgb(6, 109, 2);
+            position: fixed;
+            z-index: 1000;
+        }
+        nav{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            justify-items: center;
+            align-content: center;
+        }
+        nav a{
+            padding:10px 20px;
+            color: white;
+            font-size: 10px;
+            font-family: sans-serif;
+        }
+        nav a:hover{
+            background:linear-gradient(135deg,rgb(16, 184, 133),rgb(113, 238, 228)) ;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgb(16, 184, 133);
+            cursor: pointer;
+        }
+        .icons{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+        }
+        .icons a{
+            border: 2px solid rgb(48, 216, 48);
+            padding: 10px;
+            font-size: 5px;
+            border-radius: 100px;
+            color: white;
+            box-shadow: 3px 3px 5px green,-3px -3px 5px green;
+            transition: transform 1s ease;
+        }
+        .icons a:hover{
+            cursor: pointer;
+            color: lightgreen;
+            transform: scale(1.1);
+        }
+        }
+       
+    @media(min-width:300px) and (max-width:599px){
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+        justify-self: flex-start;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 8px 16px;
+        background-color: rgba(0, 255, 191, 0.3);
+        border-radius: 10px;
+        width: 90%;
+        text-align: center;
+        justify-items: right;
+    }
+    .icons{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    img{
+        position: absolute;
+        top: 200px;
+    }
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="image">
+            <img src="./Assets/Images/png-clipart-brand-logo-font-bakery-label-text-logo-removebg-preview.png">
+        </div>
+        <nav>
+            <a>Home</a>
+            <a>Menus</a>
+            <a>Signature</a>
+            <a>Our-Services</a>
+            <a>About-Us</a>
+            <a>Contact</a>
+        </nav>
+        <div class="icons">
+            <a><i class="fa-solid fa-cart-shopping"></i></a>
+            <a><i class="fa-solid fa-heart"></i></a>
+            <a><i class="fa-solid fa-user"></i></a>
+        </div>
+    </header>
+    </div>
+</body>
+</html>

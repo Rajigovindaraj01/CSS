@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY13-TASK-160</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding:0%;
+            box-sizing: border-box;
+        }
+        .background{
+            background-image: url(./Assets/Images/thumbbig-1369680.webp);
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            margin:auto;
+        }
+        .blur-background{
+            height: 80%;
+            width: 50%;
+            margin: auto;
+            position: relative;
+            top: 50px;
+            backdrop-filter: blur(5px);
+            align-content: center;
+        }
+        img {
+            width: 25%; 
+            height: auto;
+            position: absolute;
+            left: 200px;
+        }
+        @media(min-width:300px) and (max-width:600px){
+        img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .blur-background{
+            top: 50px;
+        }
+        }
+        @media(min-width:601px) and (max-width:1020px){
+        img{
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .blur-background{
+            top: 50px;
+        }
+        }
+        @media(max-width:1021px){
+        img{
+            width: 25%;
+            height: 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="blur-background">
+            <img src="./Assets/Images/honey-removebg-preview.png">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS-DAY-13-TASK-169</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #e3f2fd, #bbdefb);
+      padding: 40px;
+      color: #333;
+    }
+
+    .wrapper {
+      max-width: 1200px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      color: #1976d2;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    .food-image {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Tablet in landscape */
+    @media (min-width: 768px) and (orientation: landscape) {
+      body {
+        background: linear-gradient(to right, #ffe0b2, #ffcc80);
+      }
+
+      .wrapper {
+        background: #fff3e0;
+        color: #5d4037;
+      }
+
+      h1 {
+        color: #ef6c00;
+      }
+    }
+
+    /* Desktop with resolution 1920px and above */
+    @media (min-width: 1920px) {
+      body {
+        background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+      }
+
+      .wrapper {
+        background: #e0f2f1;
+        color: #004d40;
+      }
+
+      h1 {
+        color: #00695c;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Delicious Moments</h1>
+    <img class="food-image" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Delicious Food">
+    <p>
+      Discover the world of culinary delights! From crispy appetizers to rich desserts, food is not just a necessity but an experience. A good dish can bring people together, tell a story, and leave a lasting memory. Whether you're at home or at a fine dining restaurant, savor every bite.
+    </p>
+    <p>
+      With responsive design techniques like nested media queries, your food blog or recipe site can look beautiful and function perfectly on any device—from tablets in landscape mode to ultra-wide desktop screens. Make your content not only tasty but also adaptive!
+    </p>
+  </div>
+</body>
+</html>
