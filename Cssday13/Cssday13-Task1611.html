@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DAY-13-TASK-161</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .background{
+            background-image: url(./Assets/Images/thumb-1920-1041760.jpg);
+            height: 100vh;
+            width: 98vw;
+            margin: auto;
+            background-size: cover
+        }
+        .container{
+            background-color: rgba(93, 133, 0, 0.5);
+            backdrop-filter: blur(10px);
+            height: 90vh;
+            width: 60vw;
+            margin: auto;
+            position: relative;
+            top: 50px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+        .col1{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 10px;
+            overflow: hidden;
+        }
+        .col1-item{
+            overflow: hidden;
+            height: 100%;
+            border: 5px solid black;
+            transition: transform 1s ease;
+        }
+        .col1-item:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        .col2{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            overflow: hidden;
+        }
+        .col2-item{
+            overflow: hidden;
+            height: 100%;
+            border: 5px solid black;
+            transition: transform 1s ease;
+        }
+        .col2-item:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        .col3{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 10px;
+            overflow: hidden;
+        }
+        .col3-item:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        .col3-item{
+            overflow: hidden;
+            height: 100%;
+            border: 5px solid black;
+            transition: transform 1s ease;
+        }
+        img{
+            width:100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        @media(min-width:300px) and (max-width:680px){
+            .background{
+                height: 450vh;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                height: auto;
+            }
+        }
+        @media(min-width:690px) and (max-width:1020px){
+       .background{
+        height: 250vh;
+        }
+        .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        height: auto;
+        }
+
+        .col1, .col2, .col3 {
+        grid-column: span 1;
+        display: contents;/* Unwrap nested grids to flow items directly in main grid */
+        }
+
+        .col1-item, .col2-item, .col3-item {
+        height: auto;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="col1">
+                <div class="col1-item">
+                    <img src="./Assets/Images/360-f-779647007-wh4101ukntk939htzzuvfqtfe2hjmy6e-dry-fruit-ice-cream-wholesalers-1-r8uai-250.webp">
+                </div>
+                <div class="col1-item">
+                    <img src="./Assets/Images/protein-ice-cream-bowl-together-300x300.webp">
+                </div>
+                <div class="col1-item">
+                    <img src="./Assets/Images/biscoff-ice-cream-recipe-photo-tablefortwoblog-11-300x300.webp">
+                </div>
+            </div>
+            <div class="col2">
+                <div class="col2-item">
+                    <img src="./Assets/Images/ai-generated-8867608_640.png">
+                </div>
+                <div class="col2-item">
+                    <img src="./Assets/Images/Ice-Cream-Cone-Cupcakes-PIN4-452x680.jpg">
+                </div>
+            </div>
+            <div class="col3">
+                <div class="col3-item">
+                    <img src="./Assets/Images/ice6.jpg">
+                </div>
+                <div class="col3-item">
+                    <img src="./Assets/Images/ice7.jpg">
+                </div>
+                <div class="col3-item">
+                    <img src="./Assets/Images/ice8.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
