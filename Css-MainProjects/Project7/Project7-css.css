@@ -1,0 +1,193 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.background{
+    background-image: url(./Assets/Images/savor-the-aroma-and-flavor-of-india-with-biryani-a-delicious-dish-served-steamy-against-a-dark-background-ai-generated-free-photo.jpg);
+    height: 100vh;
+    width: 98vw;
+    margin: auto;
+    background-size: cover;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    color: #fff;
+    font-family: "Berkshire Swash", serif;
+    font-size: 4rem;
+    animation: slideDown 2s ease-out forwards;
+  }
+  .title-p{
+    color: rgb(255, 166, 0);
+    font-size: 3rem;
+    animation: slideDown 2s ease-out forwards;
+    font-family: "Cookie", cursive;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .background1{
+    background-image: url(./Assets/Images/360_F_1191697764_mgcZ3sNNETO9b0kn8METHTc6G1mYY3Ia\ \(1\).jpg);
+    height: 200vh;
+    width: 98vw;
+    margin: auto;
+    background-size: cover;
+  }
+  .section {
+    backdrop-filter: blur(20px);
+    padding: 50px;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    position: relative;
+    top: 50px;
+    box-shadow: 5px 5px 10px black;
+  }
+
+  .text-content {
+    flex: 1 1 60%;
+    color: white;
+  }
+
+  .image-gallery {
+    flex: 1 1 35%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .image-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+  }
+
+  .image-gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  .heading {
+    font-family: "Berkshire Swash", serif;
+    font-size: 2rem;
+    color: #d2691e;
+    margin-bottom: 20px;
+  }
+
+  ul, ol {
+    margin-left: 20px;
+    animation: fadeIn 2s ease-out forwards;
+  }
+
+  ul li, ol li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  .top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #d2691e;
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    z-index: 999;
+  }
+
+  .top-btn:hover {
+    transform: scale(1.2);
+    background-color: #ff7f50;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .background1{
+        height: 400vh;
+    }
+    .title {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .title-p{
+        color: rgb(255, 166, 0);
+        font-size: 2rem;
+        animation: slideDown 2s ease-out forwards;
+        font-family: "Cookie", cursive;
+      }
+
+    .section {
+      flex-direction: column;
+      padding: 20px 10px;
+    }
+
+    .text-content, .image-gallery {
+      flex: 1 1 100%;
+    }
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1020px) {
+    .background1{
+        height: 500vh;
+    }
+    
+    .title {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .section {
+      flex-direction: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 30px 15px;
+    }
+    img{
+        height: 50%;
+        width: 50%;
+    }
+
+    .text-content, .image-gallery {
+      flex: 1 1 100%;
+    }
+  }
+
+  @media screen and (min-width: 1021px) {
+    .background1{
+        height: 400vh;
+    }
+    .title {
+      font-size: 3rem;
+    }
+  }
