@@ -1,0 +1,368 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+    background-image: url(./Assets/Images/thumb-1920-1337526.png);
+    height: 120vh;
+    width: 98vw;
+    margin: auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container1{
+    background-image: url(./Assets/Images/thumb-1920-1337526.png);
+    height: 120vh;
+    width: 98vw;
+    margin: auto;
+    background-size: cover;
+}
+
+.artpage{
+    height: 100vh;
+    width: 80vw;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    display: grid;
+    grid-template-rows: 1fr,3fr,1fr;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px black;
+}
+.cloud{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    animation: cloudMove 2s infinite forwards ease;
+}
+.cloud1{
+    height: 15vh;
+    width: 8vw;
+    right: 10%;
+    position: absolute;
+    top: 40%;
+    border-radius: 50%;
+    background:linear-gradient(135deg,rgba(0, 255, 255, 0.205),rgb(252, 252, 253));
+}
+.cloud2{
+    height: 15vh;
+    width: 8vw;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    border-radius: 50%;
+    background:linear-gradient(135deg,rgba(0, 255, 255, 0.205),rgb(252, 252, 253));
+}
+.cloud3{
+    height: 20vh;
+    width: 10vw;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    border-radius: 50%;
+    background:linear-gradient(135deg,rgba(0, 255, 255, 0.205),rgb(252, 252, 253));
+}
+
+@keyframes cloudMove {
+    from{
+        transform: translate(10px);
+    }
+    to{
+        transform: translate(50px);
+    }
+}
+.sky{
+    background: rgb(179, 249, 252);
+    box-shadow:0px 0 20px 10px rgb(164, 252, 247);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.sun{
+    width: 9vw;
+    height: 20vh;
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    background: radial-gradient(yellow,rgb(255, 208, 0),rgb(255, 217, 0));
+    box-shadow: 5px 5px 40px yellow,-5px -5px 40px yellow;
+    animation: shadow 1s infinite forwards ease;
+}
+
+@keyframes shadow {
+    0%{
+        box-shadow: 1px 1px 10px yellow;
+    }
+    100%{
+        box-shadow: 5px 5px 40px yellow,-5px -5px 40px yellow;
+    }
+}
+.middle{
+    background-color: rgba(240, 248, 255, 0.548);
+    box-shadow: 0px 0 20px 10px rgba(1, 240, 248, 0.062);
+}
+.land{
+    background:linear-gradient(to top,rgba(11, 190, 50, 0.849),rgba(198, 245, 198, 0));
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-items: center;
+}
+.tree{
+    justify-items: left;
+    position: relative;
+}
+.tree-leaf{
+    height: 20vh;
+    width: 20vw;
+    position: relative;
+    top: 50%;
+    z-index: 1000;
+}
+.tree-stem{
+    height: 20vh;
+    width: 3vw;
+    background:linear-gradient(135deg,rgb(221, 108, 108),rgb(145, 15, 15));
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    z-index: 999;
+}
+.leaf1{
+    height: 20vh;
+    width: 10vw;
+    border-radius: 50%;
+    background:linear-gradient(135deg,rgb(102, 231, 43),rgb(2, 117, 2));
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+}
+.leaf2{
+    height: 20vh;
+    width: 10vw;
+    border-radius: 50%;
+    background:linear-gradient(135deg,rgb(102, 231, 43),rgb(2, 117, 2));
+    position: absolute;
+    left: 20%;
+    bottom: 30%;
+}
+.leaf3{
+    height: 20vh;
+    width: 10vw;
+    border-radius: 50%;
+    background:linear-gradient(135deg,rgb(102, 231, 43),rgb(2, 117, 2));
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+}
+.leaf4{
+    height: 20vh;
+    width: 10vw;
+    border-radius: 50%;
+    background:linear-gradient(135deg,rgb(102, 231, 43),rgb(2, 117, 2));
+    position: absolute;
+    left: 40%;
+    bottom: 70%;
+}
+.leaf5{
+    height: 20vh;
+    width: 10vw;
+    border-radius: 50%;
+    background:linear-gradient(135deg,rgb(102, 231, 43),rgb(2, 117, 2));
+    position: absolute;
+    left: 10%;
+    bottom: 70%;
+}
+.leaf6{
+    height: 18vh;
+    width: 8vw;
+    border-radius: 50%;
+    background:linear-gradient(135deg,rgb(102, 231, 43),rgb(2, 117, 2));
+    position: absolute;
+    left: 30%;
+    bottom: 100%;
+}
+.leaf7{
+    height: 18vh;
+    width: 8vw;
+    border-radius: 50%;
+    background:linear-gradient(135deg,rgb(102, 231, 43),rgb(2, 117, 2));
+    position: absolute;
+    left: 30%;
+    bottom: 50%;
+}
+
+.bouncingball{
+    height: 20vh;
+    width: 10vw;
+    background: radial-gradient(pink,pink,red);
+    position: relative;
+    bottom: 0;
+    border-radius: 50%;
+    animation: bounce 2s infinite forwards ease;
+}
+@keyframes bounce {
+    0%{
+        transform: translateX(-50px);
+    }
+    50%{
+        background-color: pink;
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateX(50px);
+    }
+    
+} 
+.rotating {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(rgb(248, 199, 218), rgb(236, 14, 118));
+    border-radius: 10px;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* Mobile: 300px to 600px */
+@media screen and (max-width: 600px) {
+    .container, .container1 {
+        width: 100vw;
+        height: 120vh;
+        background-size: cover;
+    }
+
+    .artpage {
+        width: 95vw;
+        grid-template-rows: 1fr 2fr 1fr;
+        top: 20px;
+    }
+
+    .cloud1, .cloud2, .cloud3 {
+        width: 15vw;
+        height: 10vh;
+    }
+
+    .sun {
+        width: 20vw;
+        height: 15vh;
+    }
+
+    .tree-leaf, .leaf1, .leaf2, .leaf3, .leaf4, .leaf5, .leaf6, .leaf7 {
+        width: 20vw;
+        height: 10vh;
+    }
+
+    .tree-stem {
+        width: 5vw;
+        position: relative;
+        left: 70%;
+    }
+
+    .bouncingball {
+        width: 15vw;
+        height: 10vh;
+    }
+
+    .rotating {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Tablet: 601px to 1020px */
+@media screen and (min-width: 601px) and (max-width: 1020px) {
+    .container, .container1 {
+        width: 100vw;
+        height: 250vh;
+        background-size: cover;
+    }
+
+    .artpage {
+        width: 90vw;
+        height: 200vh;
+        grid-template-rows: 1fr 3fr 1fr;
+        top: 30px;
+    }
+
+    .cloud1, .cloud2, .cloud3 {
+        width: 10vw;
+        height: 12vh;
+    }
+
+    .sun {
+        width: 12vw;
+        height: 18vh;
+    }
+
+    .tree-leaf, .leaf1, .leaf2, .leaf3, .leaf4, .leaf5, .leaf6, .leaf7 {
+        width: 15vw;
+        height: 15vh;
+    }
+
+    .tree-stem {
+        width: 4vw;
+        position: absolute;
+        left: 65%;
+
+    }
+
+    .bouncingball {
+        width: 12vw;
+        height: 12vh;
+    }
+
+    .rotating {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Desktop: 1021px and above */
+@media screen and (min-width: 1021px) {
+    .container, .container1 {
+        width: 98vw;
+        height: 200vh;
+    }
+
+    .artpage {
+        width: 80vw;
+        height: 100vh;
+    }
+
+    .cloud1, .cloud2, .cloud3 {
+        width: 8vw;
+        height: 15vh;
+    }
+
+    .sun {
+        width: 9vw;
+        height: 20vh;
+    }
+
+    .tree-leaf {
+        width: 20vw;
+        height: 20vh;
+    }
+
+    .tree-stem {
+        width: 3vw;
+        position: absolute;
+        left: 45%;
+    }
+
+    .bouncingball {
+        width: 10vw;
+        height: 20vh;
+    }
+
+    .rotating {
+        width: 100px;
+        height: 100px;
+    }
+}

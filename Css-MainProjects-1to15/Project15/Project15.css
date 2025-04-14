@@ -1,0 +1,235 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.hero {
+    background-image: url(./Assets/Images/bck.jpg);
+    height: 90vh;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero h4 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #eee;
+  }
+
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 4rem;
+    font-weight: bold;
+    flex-wrap: wrap;
+    backdrop-filter: blur(10px);
+    width: 50vw;
+    margin: auto
+  }
+
+  .countdown-item {
+    text-align: center;
+    color: red;
+    animation: countdowns 1s infinite forwards ease;
+  }
+  @keyframes countdowns {
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1.1);
+    }
+  }
+  .countdown-item span {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #ddd;
+  }
+
+  .registration {
+    padding: 60px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: linear-gradient(135deg,rgb(0, 255, 234),rgb(156, 189, 38));
+    box-shadow: 5px 5px 10px  black , -5px -5px 10px black;
+    border-radius: 12px;
+    margin-top: -40px;
+    z-index: 1;
+    position: relative;
+    animation: blinkCard 1s infinite forwards ease;
+  }
+
+  @keyframes blinkCard {
+    from{
+        box-shadow: 5px 5px 10px grey,-5px -5px 10px gray;
+    }
+    to{
+        box-shadow: 5px 5px 10px  black , -5px -5px 10px black;  
+    }
+  }
+  .registration h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4e0f7a;
+  }
+
+  .registration input, .registration select, .registration textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+
+  .registration button {
+    width: 100%;
+    padding: 12px;
+    background-color: #06830c;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .registration button:hover {
+    background-color: #c2185b;
+  }
+
+
+  .speakers {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg,pink,purple);
+    height: 40vh;
+    position: relative;
+    top: 50px;
+    width: 80vw;
+    margin: auto;
+  }
+
+  .speakers h2 {
+    color: #4e0f7a;
+    margin-bottom: 40px;
+  }
+
+  .speaker-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .speaker-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+  }
+
+  .speaker-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .speaker-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .speaker-card h3 {
+    margin-bottom: 5px;
+    color: #e91e63;
+  }
+
+  .speaker-card p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+/* Mobile: 300px - 600px */
+@media (max-width: 600px) {
+    .hero{
+        height: 150vh;
+    }
+    .countdown {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .speaker-card {
+      width: 90%;
+    }
+  
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+  
+    .registration {
+      padding: 30px 15px;
+    }
+  }
+  
+  /* Tablet: 601px - 1020px */
+  @media (min-width: 601px) and (max-width: 1020px) {
+    .hero h1 {
+      font-size: 2.4rem;
+    }
+  
+    .countdown {
+      font-size: 2rem;
+      gap: 30px;
+    }
+  
+    .speaker-card {
+      width: 45%;
+    }
+  
+    .registration {
+      max-width: 500px;
+    }
+  }
+  
+  /* Laptop: 1021px and above */
+  @media (min-width: 1021px) {
+    .hero h1 {
+      font-size: 2.8rem;
+    }
+  
+    .countdown {
+      font-size: 2.5rem;
+      gap: 40px;
+    }
+  
+    .speaker-card {
+      width: 250px;
+    }
+  
+    .registration {
+      max-width: 600px;
+    }
+  }
+  

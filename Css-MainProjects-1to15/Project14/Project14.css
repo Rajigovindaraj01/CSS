@@ -1,0 +1,135 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.video-bg {
+    position: fixed;
+    width: 98vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: brightness(60%);
+  }
+
+
+  .overlay {
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: pink;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+
+  .plans {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 80px;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    backdrop-filter: blur(10px);
+    color: white;
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .card h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:plum;
+  }
+
+  .card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .card ul li {
+    margin: 10px 0;
+  }
+
+  .signup-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(48, 40, 40, 0.897);
+    transition: background 0.3s;
+    z-index: 1;
+    animation: button 1s infinite forwards ease;
+  }
+
+  @keyframes button {
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+  }
+  .signup-btn:hover {
+    background-color: #e60000;
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1em;
+    }
+    .plans {
+      flex-direction: column;
+      align-items: center;
+    }
+    .card {
+      width: 90%;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1020px) {
+    h1 {
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.1em;
+    }
+    .card {
+      width: 45%;
+    }
+  }
+
+  @media (min-width: 1021px) {
+    .card {
+      width: 250px;
+    }
+  }
